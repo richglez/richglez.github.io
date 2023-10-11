@@ -173,3 +173,56 @@ body {
     font-size: 12px;
     color: #64b3f4;
 }
+
+
+
+
+
+
+
+
+@media screen and (max-width: 844px) {
+
+
+    body header{
+        overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+    }
+
+    .wrapper-nav {
+        top: 0;
+        background-color: #fff;
+    }
+
+    .wrapper-nav ul {
+        flex-direction: column; /* Cambia la dirección de los elementos a columnas */
+        height: auto; /* Ajusta la altura al contenido */
+        text-align: center; /* Centra el texto verticalmente */
+        
+    }
+
+    .wrapper-nav ul li {
+        margin: 10px 0; /* Espacio entre elementos del menú */
+        width: 100%; /* Asegura que los elementos del menú ocupen toda la anchura */
+    }
+
+    .wrapper{
+        margin-left: 40px;
+        width: 80%;
+        height: auto;
+    }
+
+    .articulos-relacionados{
+        margin-left: 40px;
+        width: 80%;
+        height: auto;
+    }
+
+    #footer{
+        width: 100%;
+        height: auto;
+    }
+
+    body{
+        background-repeat: repeat;
+    }
+}
