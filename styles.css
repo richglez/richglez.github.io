@@ -685,8 +685,7 @@ header {
 
 @media screen and (max-width: 844px) {
 
-
-    body {
+    body header{
         overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
     }
 
@@ -746,7 +745,8 @@ header {
         border-radius: 15px;
     }
 
-
+    
+    /*__________________________________________*/
     .acerca #img-About-Us {
         max-width: 100%; /* Hacer que la imagen sea responsiva */
         margin: 20px 0; /* Ajustar el margen entre la imagen y el texto */
@@ -763,10 +763,13 @@ header {
         margin: 10px 0; /* margen superior e inferior */
     }
 
+
+    /*__________________________________________*/
+
     .services h2 {
         font-size: 40px; /* Ajustar el tamaño del título */
         text-align: center; /* Centrar el texto */
-        margin: 10px 0; /* margen superior e inferior */
+        margin: 10px 70; /* margen superior e inferior */
     }
 
 
@@ -774,6 +777,8 @@ header {
         position: relative;
         left: -40px;
     }
+
+    /*__________________________________________*/
 
 
     /* Estilos para la seccion de ayuda en dispositivos móviles */
@@ -783,6 +788,7 @@ header {
         margin-left: 20px; /* Alinear el contenido al borde izquierdo de la pantalla */
         margin-right: 20px; /* Alinear el contenido al borde derecho de la pantalla */
         border-radius: 0; /* Quitar el borde redondeado para que se vea más rectangular */
+        text-align: center;
     }
 
     .help-section {
@@ -798,6 +804,8 @@ header {
     .bx {
         font-size: 18px; /* Reducir el tamaño de los íconos Boxicons en dispositivos móviles */
     }
+
+    /*__________________________________________*/
 
     .seccion2AYUDA {
         margin: 10px; /* Añadir espacio entre las secciones */
@@ -851,6 +859,8 @@ header {
         height: 50px;
         padding: 20px;
     }
+
+    /*__________________________________________*/
 
 
 
