@@ -422,7 +422,7 @@ header {
     align-items: center;
     justify-content: center;
     background-color: #f0f0f0;
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
     margin-bottom: 40px;
 }
@@ -451,7 +451,7 @@ header {
 
 
 
-
+/* mi div */
 .page-container {
     min-height: 100vh;  /* que ocupe todo el tamano de la pagina*/
 }
@@ -749,22 +749,26 @@ header {
     }
 
 
-    .acerca #img-About-Us{
-        max-width: 60px;
-        margin-top: 170px;/*deja espacio en blanco arriba*/
+    .acerca #img-About-Us {
+        max-width: 100%; /* Hacer que la imagen sea responsiva */
+        margin: 20px 0; /* Ajustar el margen entre la imagen y el texto */
     }
 
-    .acerca h1{
-        position: relative;
-        font-size: 60px;
-        left: -450px; /*vete hacia la izquieda*/
-        
+    .acerca h1 {
+        font-size: 30px; /* Reducir el tamaño del título */
+        text-align: center; /* Centrar el texto */
+        margin: 15px 0; /* (margen superior e inferior),(margen izquierdo y derecho) */
     }
 
+    .acerca p {
+        text-align: center; /* Centrar el texto */
+        margin: 10px 0; /* margen superior e inferior */
+    }
 
-    .acerca p{
-        margin-top: 17px; /*deja espacio en blanco arriba*/
-        font-size: 14px;
+    .services h2 {
+        font-size: 40px; /* Ajustar el tamaño del título */
+        text-align: center; /* Centrar el texto */
+        margin: 10px 0; /* margen superior e inferior */
     }
 
 
@@ -772,6 +776,85 @@ header {
         position: relative;
         left: -40px;
     }
+
+
+    /* Estilos para la seccion de ayuda en dispositivos móviles */
+    .contenedor-principalAYUDA {
+        margin: 20px; /* Agregar un margen para separar la sección del borde de la pantalla */
+        padding: 10px; /* Añadir un poco de espacio interno para que el contenido respire */
+        margin-left: 20px; /* Alinear el contenido al borde izquierdo de la pantalla */
+        margin-right: 20px; /* Alinear el contenido al borde derecho de la pantalla */
+        border-radius: 0; /* Quitar el borde redondeado para que se vea más rectangular */
+    }
+
+    .help-section {
+        margin: 10px; /* Añadir un poco de espacio entre las secciones de ayuda */
+        padding: 10px; /* Añadir espacio interno para que el contenido respire */
+        max-width: 100%; /* Asegurarse de que las secciones ocupen el ancho completo de la pantalla */
+    }
+
+    .help-section i {
+        font-size: 24px; /* Reducir el tamaño de los íconos en dispositivos móviles */
+    }
+
+    .bx {
+        font-size: 18px; /* Reducir el tamaño de los íconos Boxicons en dispositivos móviles */
+    }
+
+    .seccion2AYUDA {
+        margin: 10px; /* Añadir espacio entre las secciones */
+        padding: 10px; /* Añadir espacio interno */
+        border-radius: 0; /* Quitar el borde redondeado */
+    }
+
+    .seccion2AYUDA h1 {
+        font-size: 28px; /* Ajustar el tamaño del título */
+    }
+
+    .seccion2AYUDA ul {
+        margin: 10px 0; /* Añadir espacio entre la lista y otros elementos */
+    }
+
+    .seccion2AYUDA .item-lista {
+        margin-left: 0; /* Eliminar el margen izquierdo para alinear el texto a la izquierda */
+    }
+
+    .seccion2AYUDA .item-lista i {
+        font-size: 20px; /* Reducir el tamaño de los íconos en los elementos de la lista */
+    }
+
+    .seccion2AYUDA h2 {
+        font-size: 18px; /* Ajustar el tamaño del subtítulo */
+    }
+
+    .seccion2AYUDA p {
+        font-size: 14px; /* Reducir el tamaño del texto */
+    }
+
+
+    .seccion2AYUDA #comunity {
+        margin: 10px; /* Añadir espacio entre el contenedor de comunity y las secciones de ayuda */
+        flex-basis: calc(20% - 10px); /* Ancho de 20% para hacerlo más pequeño */
+        width: 300px; /* Ancho del contenedor */
+        height: 200px; /* Altura del contenedor */
+    }
+
+    .seccion2AYUDA #comunity button {
+        margin-top: 5px; /* Añadir espacio superior al botón */
+        font-size: 14px; /* Ajustar el tamaño del texto del botón */
+    }
+
+    .seccion2AYUDA #comunity h2 {
+        font-size: 12px; /* Ajustar el tamaño del subtítulo */
+    }
+    .search-barAYUDA{
+        background-color: #f0f0f0;
+        width: 300px;
+        height: 50px;
+        padding: 20px;
+    }
+
+
 
 
 }
