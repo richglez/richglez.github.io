@@ -69,7 +69,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-weight: 20px;
+    font-weight: 400;
     margin-right: 70px;
     margin-left: 250px;
 }
@@ -163,28 +163,13 @@ header {
     margin-right: 20px; /* Espacio entre la barra de búsqueda y los botones */
 }
 
-#home #search-input {
+#home .search-bar #textbox {
     width: 200px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-right: 10px;
 }
-
-#home #search-button {
-    background-color: #007BFF; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    outline: none; /* Elimina el contorno al hacer clic en el botón */
-}
-
-#home #search-button:hover {
-    background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor sobre el botón */
-}
-
 
 
 
@@ -239,7 +224,7 @@ header {
     width: 320px;
 }
 
-.list{
+.nav .list{
     width: 130%;
     height: 100vh;
     display: flex;
@@ -251,7 +236,7 @@ header {
     
 }
 
-.list_item{
+.nav .list_item{
     font-size: 20px;
     list-style: none;
     width: 100%;
@@ -262,7 +247,7 @@ header {
 }
 
 
-.list_button{
+.nav .list_button{
     display: flex;
     align-items: center;
     gap: 1em;
@@ -281,7 +266,7 @@ header {
 }
 
 
-.list_item:hover{
+.nav .list_item:hover{
     background: #dbe8ec;
 }
 
@@ -314,7 +299,7 @@ header {
     font-size: 70px; /* Reducir el tamaño del título para que sea más legible */
     text-align: center;
     margin: 20px 0; /* margen entre el parrafo con el titulo superior */
-    margin-left: 800px;
+    margin-left: 500px;
 }
 
 .acerca p {
@@ -698,6 +683,90 @@ header {
 
 
 
-@media screen and (max-widt:800px){
+@media screen and (max-width: 800px) {
+    .titulo h1 {
+      font-size: 40px; /* Reducir el tamaño de fuente en pantalla pequeña */
+    }
+    .titulo p {
+      font-size: 14px; /* Reducir el tamaño de fuente en pantalla pequeña */
+    }
+    .nav {
+        width: 34%; /* Cambia el ancho del menú lateral a 100% en dispositivos móviles */
+      }
+
+    .nav .list_item{
+        font-size: 14px;
+    }
+    .titulo h1{
+        margin-left: -2px;
+        font-size: 17px;
+        align-items: center;
+    }
+
+    .titulo p{
+        margin-left: 60px;
+        font-size: 12px;
+    }
+
+    .login {
+        margin-right: 850px;
+        font-size: 12px; /* Cambia el tamaño de fuente de los botones a 14px */
+        padding: 8px 16px; /* Ajusta el relleno del botón según tu preferencia */
+    }
     
+    .register {
+        margin-right: 810px;
+        font-size: 12px; /* Cambia el tamaño de fuente de los botones a 14px */
+        padding: 8px 16px; /* Ajusta el relleno del botón según tu preferencia */
+    }
+
+    .logo{
+        margin-top: 120px;
+        height: 120px;
+        position: absolute; /*poder mover mi logo*/
+        top: 0; /*posicionar el elemento en la parte superior de su contenedo*/
+        left: 30px; /* Ajusta la posición izquierda según tu preferencia SIN ESPACIOS EN BLANCOS!!!! */
+    }
+
+    #home .search-bar{
+        position: absolute; /*para poder controlar las posiciones agusto*/
+        bottom: 260px;/*vete hacia abajo 40pixels*/
+        left: 120px; /*muevete a partir de la izquierd, dejando pixeles*/
+    }
+
+
+    #home .search-bar #textbox{
+        position: absolute;
+        left: 70px;
+        width: 170px;
+        border-radius: 15px;
+    }
+
+
+    .acerca #img-About-Us{
+        max-width: 60px;
+        margin-top: 170px;/*deja espacio en blanco arriba*/
+    }
+
+    .acerca h1{
+        position: absolute;
+        font-size: 60px;
+        left: -450px; /*vete hacia la izquieda*/
+        bottom: -240px; /*vete hacia abajo*/
+        
+    }
+
+
+    .acerca p{
+        margin-top: 170px; /*deja espacio en blanco arriba*/
+        font-size: 14px;
+    }
+
+
+    .services h2{
+        position: relative;
+        left: -40px;
+    }
+
+
 }
