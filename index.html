@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <box-icon name='menu' ></box-icon>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Automatizando a Sabios</title>
+    <link rel="icon" href="images/logo-automatizandoASabui-removebg-preview.ico">
+</head>
+
+
+
+
+
+
+
+<body>
+
+
+    <!-- HOME pagina principal-->
+    <header id="home">
+
+
+        
+
+        <!-- Este es el contenedor del menú -->
+        <nav class="nav">
+            <ul class="list">
+            <br><br> <!--Salto de linea para dejar espacio con en logo-->
+
+                <!-- LOGO -->
+                <img src="images/logo-automatizando.png" alt="" srcset="" class="logo">
+
+                <!-- opcion 1 Inicio-->
+                <li class="list_item">
+                    
+                    <div class="list_button">
+                        <br> <!--Para poder centrar los elementos-->
+                        <i class='bx bxs-home-alt-2' id="En_menuIconoHome"></i>
+                        <a href="#home" class="nav_link nav_link--inside" id="En_menuHome">Inicio</a>  
+                    </div>
+                    
+                </li>
+
+                
+                <!-- opcion 2 Acerca de nosotros-->
+                <li class="list_item">
+                    <div class="list_button list_button--click">
+                        <br> <!--Para poder centrar los elementos-->
+                        <i class='bx bxs-business'></i>
+                        <a href="#acerca" class="nav_link nav_link--inside">Acerca de nosotros</a>
+                    </div>
+                </li>
+
+
+                <!-- opcion 3 Servicios-->
+                <li class="list_item">
+                    <div class="list_button">
+                        <br> <!--Para poder centrar los elementos-->
+                        <i class='bx bxs-book-content'></i>
+                        <a href="#servicios" class="nav_link nav_link--inside">Servicios</a> 
+                    </div>
+                </li>
+
+
+                <!-- opcion 4 Asistente Virtual(Chatbot)-->
+                <li class="list_item">
+                    <div class="list_button">
+                        <br> <!--Para poder centrar los elementos-->
+                        <i class='bx bxs-message-alt-dots' ></i>
+                        <a href="chatbox.html" class="nav_link nav_link--inside">Asistente Virtual</a> 
+                    </div>
+                </li>
+
+
+
+                <!-- opcion 5 Ayuda y Soporte-->
+                <li class="list_item">
+                    <div class="list_button">
+                        <br> <!--Para poder centrar los elementos-->
+                        <i class='bx bxs-help-circle' ></i>
+                        <a href="#help" class="nav_link nav_link--inside">Ayuda y Soporte</a> 
+                    </div>
+                </li>
+
+
+                <!-- opcion 6 Contacto-->
+                <li class="list_item">
+                    <div class="list_button">
+                        <br> <!--Para poder centrar los elementos-->
+                        <i class='bx bx-mail-send' ></i>
+                        <a href="#footer" class="nav_link nav_link--inside">Contactanos</a> 
+                    </div>
+                </li>
+
+
+            </ul>
+        </nav>
+
+
+
+        <div class="titulo">
+            <h1>Automatizando a Sabios</h1>
+
+
+                <br>
+            <p>
+                Una plataforma 
+                y aplicación digital para ayudar a adultos mayores de edad
+                en la Ciudad de México. Disminuyendo la brecha digital 
+                por medio de cursos
+                y actividades de aprendizaje digital.
+            <p>
+
+        </div>
+
+
+
+
+
+        <!----------------------LOGIN & register----------------------------->  
+        <div class="barra">
+                <div class="login">
+                    <a href="login.html">Iniciar Sesion</a>  <!--btn-->
+                </div>
+
+                <div class="register">
+                    <a href="register.html">Registrarse</a>  <!--btn-->
+                </div>
+        </div>    
+    
+    
+    
+
+
+
+        <!----------------------barra de busqueda (SEARCH)----------------------------->  
+
+        <!-- Barra de búsqueda -->
+        <div class="search-bar" id="search-bar">
+            <input type="text" id="search-input" placeholder="Buscar...">
+            <button id="search-button">Buscar</button>
+        </div>
+
+    </header>
+<!----------------------LOGIN & register----------------------------->  
+    <div class="barra">
+        <div class="login">
+            <a href="login.html">Iniciar Sesion</a>  <!--btn-->
+        </div>
+
+        <div class="register">
+            <a href="register.html">Registrarse</a>  <!--btn-->
+        </div>
+    </div>    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+    <br>
+    <!----------------------About us------------------------------>>    
+    <div class="acerca" id="acerca">
+
+
+        <br>
+        <h1>Acerca de Nosotros</h1>
+        <br>
+        <img src="images/about-us.jpg" alt="" id="img-About-Us">
+    <p id="infoQuienesSomos">Somos una organizacion distinada a abordar la inclusion digital a las personas mayores de edad en la Ciudad de Mexico
+            mediante esta plataforma, debido a que podemos conectar con las audiencias con el objetivo de 
+            promover la inclusión de adultos mayores en la tecnología. Como profesionales de la Comunicación e 
+            Informática, nuestro propósito ante la sociedad es informar y capacitar al mundo, por lo que buscamos 
+            mejorar la autonomía, la interacción e incluso la calidad de vida de los adultos mayores en el mundo digital.</p>
+    </div>
+
+
+
+
+
+
+
+        <!----------------------Services------------------------------>
+        
+    <div class="box-services">
+        <section class="services" id="servicios">
+            <a href="#home" id="Back-Home">
+            </a>
+            <h2>Nuestros Servicios</h2>
+            
+            <div class="service">
+                <h3>Capacitación Tecnológica Personalizada</h3>
+                <p>Tutoriales interactivos y clases en línea para aprender a usar la tecnología.</p>
+            </div>
+            <div class="service">
+                <h3>Consultas Médicas en Línea</h3>
+                <p>Acceso a médicos en línea para consultas virtuales y reservas de citas.</p>
+            </div>
+            <div class="service">
+                <h3>Juegos y Entretenimiento</h3>
+                <p>Selección de juegos en línea y contenido de entretenimiento.</p>
+            </div>
+            <div class="service">
+                <h3>Asistencia Técnica 24/7</h3>
+                <p>Soporte técnico en línea a cualquier hora, día o noche.</p>
+            </div>
+            <div class="service">
+                <h3>Comunidad y Redes Sociales</h3>
+                <p>Espacios interactivos para conectar con otros usuarios.</p>
+            </div>
+            <div class="service">
+                <h3>Información y Recursos</h3>
+                <p>Artículos educativos y recursos relacionados.</p>
+            </div>
+            
+        </section>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- Seccion 1 de Ayuda -->
+        <div class="page-container" id="help"> <!--clase principal-->
+            <a href="#home" id="Back-Home">
+                <i class='bx bxs-home' id="id-Home_icon"></i>
+            </a>
+            
+            <div class="contenedor-principalAYUDA">
+                <h1 id="ayudaTitulo">¿Cómo te podemos ayudar?</h1>
+                <!-- Barra de búsqueda para la sección de Ayuda -->
+                <div class="search-barAYUDA">
+                    <i class='bx bx-search-alt-2'></i>
+                    <input type="text" id="search-input" placeholder="Buscar...">
+                    <button id="search-button">Buscar</button>
+                </div>
+                
+
+
+                <!-- Secciones en boxes con Ayuda con la cuenta, Ayuda con la aplicación, etc. -->
+                <div class="help-sections">  <!--clase de secciones-->
+
+                    <div class="help-section">
+                        <i class='bx bx-help-circle'></i>
+                        <h2>Ayuda con la cuenta</h2>
+                        <p>Información y asistencia relacionada con tu cuenta.</p>
+                    </div>
+                    <div class="help-section">
+                        <i class='bx bx-help-circle'></i>
+                        <h2>Ayuda con la aplicación</h2>
+                        <p>Obtén soporte para problemas de la aplicación.</p>
+                    </div>
+                    <!-- Agrega más secciones de ayuda aquí -->
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Sección 2 de Ayuda -->
+        <div class="seccion2AYUDA">
+            <ul class="listado-AyudasRapidas">
+                <div id="Ayuda-Rapida"> 
+                    
+                    <h1>Ayuda rápida</h1>
+                    <li class="item-lista">
+                        <a href="">No puedo restablecer mi contraseña</a>
+                        <i class='bx bx-chevron-right'></i>
+                    </li>
+
+                    <li class="item-lista">
+                        <a href="">No recuerdo mi información para iniciar sesión</a>
+                        <i class='bx bx-chevron-right'></i>
+                    </li>
+
+                    <li class="item-lista">
+                        <a href="">Ayuda para iniciar sesión con Facebook</a>
+                        <i class='bx bx-chevron-right'></i>
+                    </li>
+
+                    <li class="item-lista">
+                        <a href="">Actualizaciones de precios</a>
+                        <i class='bx bx-chevron-right'></i>
+                    </li>
+
+                    <li class="item-lista">
+                        <a href="">Métodos de pago</a>
+                        <i class='bx bx-chevron-right'></i>
+                    </li>
+                </div>
+
+
+            </ul><!--Aqui acaba el contenedor de listado-->
+            <div id="comunity">
+                <h2>Visita nuestra Comunidad</h2>
+                <p>¿Tienes preguntas? ¡Nuestra Comunidad mundial de expertos te puede ayudar!</p>
+                <a href=".html">
+                    <button>Ir a la Comunidad</button>
+                </a>
+            </div>
+
+        </div> <!--Aqui acaba el contenedor princiapal-->
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer - contacto-->
+    <footer id="footer">
+        <section>
+            <div class="social-media">
+                <a href="https://www.facebook.com/?locale=es_LA">
+                    <i class='bx bxl-facebook-circle' ></i>
+                </a>
+
+                <a href="https://www.instagram.com/">
+                    <i class='bx bxl-instagram-alt' ></i>
+                </a>
+                
+                <a href="https://www.tiktok.com/foryou">
+                    <i class='bx bxl-tiktok' ></i>
+                </a>
+                
+                <a href="https://mail.google.com/mail/u/0/#inbox">
+                    <i class='bx bxl-gmail' ></i>
+                </a>
+
+                <i class='bx bxs-phone-call' >+52 55 2389 8639</i>
+                
+                <a href=".html" id="aviso">Aviso de privacidad</a>
+
+            </div>
+        </section>
+    </footer>
+
+    
+
+</body><!-- FINAL DEL BODY -->
+
+
+
+</html> <!-- FINAL DEL CODIGO -->

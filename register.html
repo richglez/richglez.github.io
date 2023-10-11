@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse - Automatizando Sabios</title>
+    <link rel="stylesheet" href="register-styles.css">
+</head>
+
+
+
+
+
+
+<body>
+    <div class="wrapper"> <!--Contenedor-->
+        <form action=""> <!--********FORMULARIO PARA REGISTRARSE********-->
+            <h1>Crear una cuenta</h1> <!--Titulo-->
+            <!--email@-->
+            <div class="input-box"> 
+                <label for="">Dirección de email</label>
+                <input type="text" placeholder="nombre@dominio.com" required id="txtEmail">
+            </div>
+            <!--password-->
+            <div class="input-box"> 
+                <label for="">Contraseña</label>
+                <input type="password" placeholder="Crea una contraseña" required id="txtPassword">
+                <label for="">Confirma tu contraseña</label>
+                <input type="password" placeholder="Confirma tu contraseña" required id="txtPasswordConfirm">
+            </div>
+             <!--usuario-->
+             <div class="input-box"> 
+                <label for="">Usuario</label>
+                <input type="text" placeholder="Crea un nombre de usuario" required id="txtUser">
+            </div>
+            <p>Esto aparecera en tu perfil</p>
+            <!--Fecha de nacimiento-->
+            <div class="input-box"> 
+                <label for="">Cual es tu fecha de nacimiento?</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+            </div>
+            <!--Genero-->
+            <div class="input-box"> 
+                <label for="">Cual es tu genero</label>
+                <form action="procesar.php" method="post">
+                    <label>
+                        <input type="radio" name="genero" value="masculino"> Masculino
+                    </label>
+                    <label>
+                        <input type="radio" name="genero" value="femenino"> Femenino
+                    </label>
+                    <label>
+                        <input type="radio" name="genero" value="otro"> Otro
+                    </label>
+                </form>
+            </div>
+
+            
+
+            <!--Boton de enviar formulario-->
+            <button onclick="redirigirAInicio()" type="submit" class="Siguiente">Siguiente
+                
+            </button>
+
+
+
+
+            <script>
+                function redirigirAInicio() {
+                    // Agregar código de procesamiento del formulario aquí si es necesario
+                    // Por ejemplo, enviar datos al servidor para el registro
+                
+                    // Luego, redirige al usuario a la página de inicio
+                    window.location.href = "index.html";
+                }
+            </script>
+
+
+
+            <div class="custom-divider">
+                <span>______________o______________</span>
+            </div>
+
+            <!--********FORMULARIO PARA INICIAR SESION********-->
+            <div class="register-link">
+                <p>Ya tienes cuenta creada? 
+                    <a href="login.html">Inicia sesión aquí.</a>
+                </p>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

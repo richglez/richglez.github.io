@@ -1,0 +1,703 @@
+/* ESTILOS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth; /* Agregar scroll-behavior para el desplazamiento suave */
+    
+}
+
+
+
+
+
+
+body {
+    background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+}
+
+
+
+
+header {
+    display: flex; /* Utiliza flexbox para alinear elementos en una fila */
+    align-items: center; /* Centra verticalmente los elementos */
+
+}
+
+
+
+
+
+/* _____________LOGO___________________ */
+.logo{
+    position: absolute;
+    top: 0;
+    left: 50px;
+    height:160px;;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* _______________________AUTOMATIZANDO A SABIOS - TITULO_______________________ */
+.titulo h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 200px;
+    font-size: 80px;
+}
+
+.titulo p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 20px;
+    margin-right: 70px;
+    margin-left: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+/* _______________________LOGIN y REGISTER BOTON_______________________ */
+
+
+.login {
+    position: fixed;
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    right: 20px; /* Ajusta la distancia desde la derecha */
+    display: inline-block;
+    background-color: #cc8e2b; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Relleno interno del botón */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Alineación del texto */
+    font-size: 16px; /* Tamaño de letra */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse sobre el botón */
+}
+
+
+.login:hover {
+    background-color: #e37d00; /* Cambia el color de fondo al pasar el mouse */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05); /* Aplica una escala del 105% al hacer hover */
+    transition: 1s;
+}
+
+.login a{
+    text-decoration: none;
+    color:#fff
+}
+
+
+
+.register {
+    position: fixed;
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    right: 170px; /* Ajusta la distancia desde la derecha */
+    display: inline-block;
+    background-color: #59ace4; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Relleno interno del botón */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Alineación del texto */
+    font-size: 16px; /* Tamaño de letra */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse sobre el botón */
+}
+
+
+.register:hover {
+    background-color: #519bd8; /* Cambia el color de fondo al pasar el mouse */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05); /* Aplica una escala del 105% al hacer hover */
+    transition: 1s;
+}
+
+.register a{
+    text-decoration: none;
+    color:#fff
+}
+
+
+
+
+
+
+
+
+
+
+
+/*_______________________Estilos para la barra de búsqueda_______________________ */
+#home .search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Espacio entre la barra de búsqueda y los botones */
+}
+
+#home #search-input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#home #search-button {
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none; /* Elimina el contorno al hacer clic en el botón */
+}
+
+#home #search-button:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* _______________________BOTON DE HOME_______________________ */
+#id-Home_icon{
+    position: fixed;
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    left: 20px; /* Ajusta la distancia desde la derecha */
+    font-size: 50px;
+    font-style: none;
+    outline: none; /* Quita el resaltado al hacer clic */
+    color: #303440;
+    
+}
+
+
+#id-Home_icon:active {
+    background-color: #d0fff3;
+    border-radius: 20px;
+    box-shadow: 0 0 3px rgba(120, 10, 20, 0.2);
+    transition: transform 0.3s; /* Agrega una transición suave para suavizar el efecto */
+}
+
+
+
+#id-Home_icon:hover {
+    background-color: #bef8ff;
+    border-radius: 20px;
+    box-shadow: 0 0 3px rgba(120, 10, 20, 0.2);
+    transform: scale(1.38); /* Aplica una escala del 105% al hacer hover */
+    transition: transform 0.3s; /* Agrega una transición suave para suavizar el efecto */
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* _______________________MENU LATERAL_______________________ */
+
+.nav{
+    width: 320px;
+}
+
+.list{
+    width: 130%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background: #fff;
+    
+    
+}
+
+.list_item{
+    font-size: 20px;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align:left; /* Alinea el texto a la izquierda */
+    
+}
+
+
+.list_button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+
+.nav_link{
+    color: #303440;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+    
+}
+
+
+.list_item:hover{
+    background: #dbe8ec;
+}
+
+
+
+/* Estilos para el icono */
+
+/* Estilos para el enlace cuando está activo */
+#home:active {
+    transition: transform 0.1s ease; /* Agrega una transición suave para suavizar el efecto */
+}
+
+
+
+
+
+
+
+
+/* _______________________ABOUT US_______________________ */
+.acerca {
+    width: 100%;
+    height: auto; /* Cambiado a auto para que la altura se ajuste al contenido */
+    background: #fff;
+    overflow: hidden; /* Evitar que el contenido flote fuera del contenedor */
+    padding: 20px; /* Añadir espacio alrededor del contenido */
+}
+
+.acerca h1 {
+    font-size: 70px; /* Reducir el tamaño del título para que sea más legible */
+    text-align: center;
+    margin: 20px 0; /* margen entre el parrafo con el titulo superior */
+    margin-left: 800px;
+}
+
+.acerca p {
+    text-align: justify; /* Justifica el texto para que se ajuste al ancho */
+    margin: 0; /* Eliminar el margen predeterminado */
+}
+
+.acerca #img-About-Us {
+    max-width: 700px; /* Hacer que la imagen sea responsiva */
+    height: auto; /* Permitir que la altura se ajuste proporcionalmente */
+    float: left; /* Flotar la imagen a la izquierda */
+    margin: 0 20px 20px 0; /* Espaciado alrededor de la imagen */
+    margin-left: 40px;
+}
+
+.acerca #infoQuienesSomos {
+    text-align: justify; /* Justificar el texto para que se ajuste al ancho */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* _______________________SERVICIOS_______________________ */
+/* Estilos para la caja de color */
+.box-services {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 1200px;
+    
+}
+
+
+
+
+.services h2 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    padding: 20px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de flexbox a columna */
+    align-items: center; /* Centra los elementos verticalmente */
+    
+    
+}
+
+/* Estilos para la lista de servicios */
+.service-container {
+    display: flex;
+    flex-direction: column; /* Organiza los servicios en una columna */
+    align-items: flex-start; /* Alínea los servicios al comienzo de la columna */
+    margin-top: 20px; /* Espaciado superior entre servicios */
+    
+    
+}
+
+/* Estilos para cada servicio */
+.service {
+    background-color: #fff; /* Color de fondo para cada servicio */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px; /* Espaciado inferior entre servicios */
+    width: 100%; /* Ancho completo dentro de la columna */
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de flexbox a columna */
+    align-items: center; /* Centra los elementos verticalmente */
+    margin-bottom: 30px; /* Agregar margen inferior de 20px */
+    
+}
+
+
+.service:hover {
+    background-color: #d0faff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Aplica una escala del 105% al hacer hover */
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* _______________________AYUDA_______________________ */
+
+
+
+/* Estilos para la barra de búsqueda */
+.search-barAYUDA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+
+
+
+#search-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 300px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.page-container {
+    min-height: 100vh;  /* que ocupe todo el tamano de la pagina*/
+}
+
+
+
+
+.contenedor-principalAYUDA #ayudaTitulo{
+    padding-bottom: 60px
+}
+
+
+.contenedor-principalAYUDA {
+    margin-top: 50px;
+    margin-left: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    min-height: 80vh; /* Ajusta el valor según tus necesidades */
+    background-color: #fff;
+    border-radius: 30px;/* aqui asigna un border radius */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    max-width: 500px; /* meter las cajas en mi caja principal */
+}
+
+
+/* Estilos para las diferentes secciones de ayuda */
+.help-section {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 4, 0.1); /* horizontal-offset es la distancia horizontal de la sombra 
+    desde el elemento. vertical-offset es la distancia vertical de la sombra desde el elemento. 
+    blur es la cantidad de desenfoque aplicado a la sombra. spread es la cantidad de expansión de la sombra. color es el color de la sombra.*/
+    margin: 10px;
+    max-width: 500px;  /* meter las cajas en mi caja principal */
+    cursor: pointer;
+    margin-bottom: 30px; /* Agregar margen inferior entre secciones */
+
+}
+
+
+.help-section:hover{
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05); /* Aplica una escala del 105% al hacer hover */
+    transition: 1s;
+}
+
+.help-section i {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+/* Estilos para los íconos (usando la biblioteca Boxicons) */
+.bx {
+    font-size: 24px;
+}
+
+
+
+
+
+
+/* _______________________Estilos para la sección 2 de Ayuda_______________________ */
+.seccion2AYUDA {
+    min-height: 60vh; /*maxima altura de la pagina en esta seccion*/
+    background-image: linear-gradient(120deg, #fdfbfbe8 50%, #ebedeec2 100%);
+    border-radius: 30px;
+    border-color: #1f1f1f;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.seccion2AYUDA h1 {
+    font-size: 38px;
+    margin: 20px auto 10px;
+    text-align: center;
+}
+
+.seccion2AYUDA ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto 10px;
+    text-align: left;
+}
+
+/* Estilo para cada elemento de la lista */
+.seccion2AYUDA .item-lista {
+    display: flex;
+    align-items: center;
+    margin-left: 760px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Estilo para las flechas dentro de los elementos de la lista */
+.seccion2AYUDA .item-lista i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.seccion2AYUDA .item-lista a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.seccion2AYUDA .item-lista a:hover {
+    color: #0056b3;
+}
+
+.seccion2AYUDA h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.seccion2AYUDA p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.seccion2AYUDA #comunity button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-left: 200px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.seccion2AYUDA #comunity button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Contenedores */
+.seccion2AYUDA #comunity{
+    /* CREAR CONTENEDOR */
+    width: 600px; /* Ancho del contenedor */
+    height: 200px; /* Altura del contenedor */
+    background: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%); /* Color de fondo con degradado */
+    border: 1px solid #ccc; /* Borde del contenedor */
+    padding: 20px; /* Relleno interno del contenedor */
+    margin: 20px; /* Margen exterior del contenedor */
+    color: #fff; /* Color de texto dentro del contenedor */
+    /* POSICIONAMIENTO*/
+    margin-top: 100px;
+    margin-left: 650px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+.seccion2AYUDA #comunity h2{
+    font-size: 38px;
+    box-shadow: 1px 5px 30px rgba(0, 0, 0, 0.3);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* _______________________FOOTER - CONTACTO_______________________ */
+/* Estilos para el footer */
+#footer {
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    overflow: visible;
+}
+
+/* Estilos para los íconos de redes sociales */
+.social-media a {
+    color: #fff; /* Color del ícono de la red social */
+    font-size: 24px; /* Tamaño del ícono */
+    margin: 0 10px; /* Espaciado horizontal entre íconos */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Estilos para el número de teléfono */
+.social-media .bx.bxs-phone-call {
+    display: block; /* Hace que el número sea un elemento de bloque */
+    font-size: 20px; /* Tamaño del número de teléfono */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+/* Estilos para los íconos de contacto */
+.social-media .bx.bxs-user-voice,
+.social-media .bx.bx-user-circle {
+    font-size: 24px; /* Tamaño de los íconos de contacto */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+
+#aviso{
+    font-size: 12px;
+    color: #64b3f4;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-widt:800px){
+    
+}

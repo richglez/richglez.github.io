@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>AS - Iniciar Sesion</title>
+</head>
+
+
+<body>
+
+    <div class="wrapper"> <!--Contenedor-->
+        <form action=""> <!--********FORMULARIO PARA INICIAR SESION********-->
+            <h1>Iniciar Sesion</h1> <!--Titulo-->
+            <!--User-->
+            <div class="input-box"> <!--Contenedor del usuario txtUsuario-->
+                <input type="text" placeholder="Usuario" required id="txtUsuario">
+                <i class='bx bx-user'></i>
+            </div>
+
+            <!--Password-->
+            <div class="input-box"> <!--Contenedor del la contrasena txtPassword-->
+                <input type="password" placeholder="Contrasena" required id="txtPassword">
+                <i class='bx bx-lock' ></i>
+            </div>
+
+
+
+
+
+
+            <!--Remember-->
+            <div class="remember-forgot"> <!--Contenedor del olvido la contrasena txtForget-->
+                <label for=""> Recordarme
+                    <input type="checkbox">
+                </label>
+                <!--Forget-->
+                <a href="#" id="Olvide">Olvide mi contrasena?</a>
+            </div>
+
+
+
+
+
+            <!--Iniciar Sesion-->
+            <button  onclick="redirigirAInicio()" type="submit" class="btnIniciar">Iniciar</button>
+
+            <script>
+                function redirigirAInicio() {
+                    // Obtén referencias a los campos de entrada
+                    var txtEmail = document.getElementById("txtEmail");
+                    var txtPassword = document.getElementById("txtPassword");
+                    var txtUser = document.getElementById("txtUser");
+                
+                    // Verifica si los campos obligatorios están completos
+                    if (txtEmail.checkValidity() && txtPassword.checkValidity() && txtUser.checkValidity()) {
+                        // Todos los campos obligatorios están completos, puedes continuar con el procesamiento
+                        // Agrega aquí tu código de procesamiento del formulario
+                
+                        // Luego, redirige al usuario a la página de inicio
+                        window.location.href = "index.html";
+                    } else {
+                        // Alguno de los campos obligatorios no está completo, puedes mostrar un mensaje de error o hacer lo que desees.
+                        alert("Por favor, complete todos los campos obligatorios.");
+                    }
+                }
+            </script>
+
+
+
+
+
+
+
+            <!--********FORMULARIO PARA REGISTRARSE********-->
+            <div class="register-link">
+                <p>No tienes cuenta? 
+                    <a href="register.html" id="lblRegistrar">Registrarse</a>
+                </p>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
