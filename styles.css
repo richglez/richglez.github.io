@@ -712,19 +712,8 @@ header {
         font-size: 12px;
     }
 
-    .login {
-        position: fixed;
-        margin-right: 850px;
-        font-size: 12px; /* Cambia el tamaño de fuente de los botones a 14px */
-        padding: 8px 16px; /* Ajusta el relleno del botón según tu preferencia */
-    }
+
     
-    .register {
-        position: fixed;
-        margin-right: 810px;
-        font-size: 12px; /* Cambia el tamaño de fuente de los botones a 14px */
-        padding: 8px 16px; /* Ajusta el relleno del botón según tu preferencia */
-    }
 
     .logo{
         margin-top: 120px;
