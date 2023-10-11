@@ -169,7 +169,15 @@ header {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-right: 10px;
+    text-indent: 20px; /* Mueve el cursor 10px hacia la derecha */
 }
+
+/*icono de busqueda */
+#home .search-bar #icono_busqueda {
+    position: absolute;
+    padding: 2px;
+    color: #555;
+  }
 
 
 
@@ -426,8 +434,6 @@ header {
     border-radius: 20px;
     margin-bottom: 40px;
 }
-
-
 
 
 #search-input {
@@ -744,6 +750,12 @@ header {
         width: 170px;
         border-radius: 15px;
     }
+
+/*icono de busqueda */
+
+
+
+
 
     
     /*__________________________________________*/

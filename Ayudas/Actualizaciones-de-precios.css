@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Poppins:ital,wght@0,400;0,600;1,300&display=swap');
+
+*{
+    margin: 0;  /* quita los espacios de margen */
+    padding: 0; /* quita los espacios de margen */
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif; 
+    scroll-behavior: smooth;
+    
+}
+
+
+
+.wrapper-nav {
+    top: 0;
+    background-color: #fff;
+}
+
+
+.wrapper-nav #logo{
+    height: 90px;
+}
+
+.wrapper-nav ul {
+    list-style: none; /* Elimina los marcadores de lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Muestra los elementos en línea */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 100px; /* Ajusta la altura del menú */
+}
+
+.wrapper-nav ul li {
+    margin: 0 20px; /* Espacio entre elementos del menú */
+}
+
+.wrapper-nav ul li a {
+    text-decoration: none; /* Quita la subrayado de los enlaces */
+    color: #000; /* Color del texto */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+/* Estilos para la barra de búsqueda */
+.wrapper-search {
+    position: relative;
+}
+
+.wrapper-search input[type="text"] {
+    padding: 5px 5px 5px 30px; /* Ajusta el padding para crear espacio a la izquierda */
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.wrapper-search i {
+    position: absolute;
+    top: 50%;
+    left: 5px; /* Alinea el icono con el espacio del padding del campo de entrada de texto */
+    transform: translateY(-50%);
+    color: #555;
+}
+
+
+
+
+
+
+
+
+body {
+    background-image: url('../images/pexels-google-deepmind-17485710.jpg');
+    background-size: 100% auto; /* 100% de ancho y tamaño automático en altura */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen de fondo para el efecto parallax */
+    background-position: center top; /* Centrar la imagen en la parte superior */
+}
+
+.wrapper{
+    width: 700px;
+    height:400px;
+    background-image: linear-gradient(to top, #ffc880 0%, #ffde96 100%);
+    box-shadow: 5px 5px 10px 2.2px #686868;
+    /* Para centrar horizontalmente y verticalmente */
+    margin: 0 auto;
+    margin-top: 70px;
+    text-align: justify;
+
+}
+
+.wrapper h1{
+    color: #fff;
+    font-weight: bold;
+    /*Contenedor para mi h1*/
+    background-color: #444141; /* Color de fondo negro */
+    padding: 17px; /* Añade relleno alrededor del texto */
+}
+
+
+.wrapper p{
+    padding: 17px; /* Añade relleno alrededor del texto */
+}
+
+
+
+/* Estilos para el enlace <a> */
+.wrapper a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* _______________________FOOTER - CONTACTO_______________________ */
+/* Estilos para el footer */
+#footer {
+    margin-top: 280px;
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    overflow: visible;
+}
+
+/* Estilos para los íconos de redes sociales */
+.social-media a {
+    color: #fff; /* Color del ícono de la red social */
+    font-size: 24px; /* Tamaño del ícono */
+    margin: 0 10px; /* Espaciado horizontal entre íconos */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Estilos para el número de teléfono */
+.social-media .bx.bxs-phone-call {
+    display: block; /* Hace que el número sea un elemento de bloque */
+    font-size: 20px; /* Tamaño del número de teléfono */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+/* Estilos para los íconos de contacto */
+.social-media .bx.bxs-user-voice,
+.social-media .bx.bx-user-circle {
+    font-size: 24px; /* Tamaño de los íconos de contacto */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+
+#aviso{
+    font-size: 12px;
+    color: #64b3f4;
+}
