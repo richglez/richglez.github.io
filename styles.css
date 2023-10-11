@@ -687,8 +687,6 @@ header {
 
 
     body {
-        max-width: 600px; /* Establece un ancho máximo para el contenido */
-        margin: 0 auto; /* Centra el contenido horizontalmente */
         overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
     }
 
