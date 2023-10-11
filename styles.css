@@ -684,6 +684,15 @@ header {
 
 
 @media screen and (max-width: 844px) {
+
+
+    body {
+        max-width: 600px; /* Establece un ancho máximo para el contenido */
+        margin: 0 auto; /* Centra el contenido horizontalmente */
+        overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+    }
+
+    
     .titulo h1 {
       font-size: 40px; /* Reducir el tamaño de fuente en pantalla pequeña */
     }
