@@ -683,7 +683,7 @@ header {
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 844px) {
     .titulo h1 {
       font-size: 40px; /* Reducir el tamaño de fuente en pantalla pequeña */
     }
@@ -698,23 +698,29 @@ header {
         font-size: 14px;
     }
     .titulo h1{
-        margin-left: -2px;
-        font-size: 17px;
+        position: relative;
+        top: 80px;
+        left: -125px;
+        font-size: 22px;
         align-items: center;
     }
 
     .titulo p{
-        margin-left: 60px;
+        position: relative;
+        left: -30px;
+        margin: 100px;  /*ajustar el texto para que no se vea como tipo lista y que se vea como un parrafo*/
         font-size: 12px;
     }
 
     .login {
+        position: fixed;
         margin-right: 850px;
         font-size: 12px; /* Cambia el tamaño de fuente de los botones a 14px */
         padding: 8px 16px; /* Ajusta el relleno del botón según tu preferencia */
     }
     
     .register {
+        position: fixed;
         margin-right: 810px;
         font-size: 12px; /* Cambia el tamaño de fuente de los botones a 14px */
         padding: 8px 16px; /* Ajusta el relleno del botón según tu preferencia */
@@ -726,18 +732,20 @@ header {
         position: absolute; /*poder mover mi logo*/
         top: 0; /*posicionar el elemento en la parte superior de su contenedo*/
         left: 30px; /* Ajusta la posición izquierda según tu preferencia SIN ESPACIOS EN BLANCOS!!!! */
+        margin-bottom: 20px;
     }
 
     #home .search-bar{
-        position: absolute; /*para poder controlar las posiciones agusto*/
+        position: relative; /*para poder controlar las posiciones agusto*/
         bottom: 260px;/*vete hacia abajo 40pixels*/
         left: 120px; /*muevete a partir de la izquierd, dejando pixeles*/
     }
 
 
     #home .search-bar #textbox{
-        position: absolute;
-        left: 70px;
+        position: relative;
+        left: -415px;
+        bottom: -400px;
         width: 170px;
         border-radius: 15px;
     }
@@ -749,16 +757,15 @@ header {
     }
 
     .acerca h1{
-        position: absolute;
+        position: relative;
         font-size: 60px;
         left: -450px; /*vete hacia la izquieda*/
-        bottom: -240px; /*vete hacia abajo*/
         
     }
 
 
     .acerca p{
-        margin-top: 170px; /*deja espacio en blanco arriba*/
+        margin-top: 17px; /*deja espacio en blanco arriba*/
         font-size: 14px;
     }
 
