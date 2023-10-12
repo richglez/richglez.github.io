@@ -726,24 +726,23 @@ header {
   }
 
   .logo {
+    height: 110px;
     margin-top: 120px;
-    height: 120px;
-    position: absolute; /*poder mover mi logo*/
-    top: 0; /*posicionar el elemento en la parte superior de su contenedo*/
+    margin-bottom: 30px;
+    top: -90px; /*posicionar el elemento en la parte superior de su contenedo*/
     left: 30px; /* Ajusta la posición izquierda según tu preferencia SIN ESPACIOS EN BLANCOS!!!! */
-    margin-bottom: 20px;
+
   }
 
   #home .search-bar {
     position: relative; /*para poder controlar las posiciones agusto*/
-    bottom: 260px; /*vete hacia abajo 40pixels*/
     left: 120px; /*muevete a partir de la izquierd, dejando pixeles*/
   }
 
   #home .search-bar #textbox {
     position: relative;
-    left: -415px;
-    bottom: -400px;
+    left: -409px;
+    bottom: -100px;
     width: 170px;
     border-radius: 15px;
   }
@@ -771,7 +770,7 @@ header {
   
   .service {
     flex: 1;
-    width: 80px;
+    width: 100px;
     margin: 40px; /* Espacio entre los servicios */
     padding: 20px;
     border-radius: 10px;
