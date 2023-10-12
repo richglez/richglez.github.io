@@ -409,32 +409,35 @@ header {
 /* _______________________AYUDA_______________________ */
 
 /* Estilos para la barra de búsqueda */
-.search-barAYUDA {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f0f0f0;
+.contenedor-principalAYUDA #search-input {
   padding: 10px;
-  border-radius: 20px;
-  margin-bottom: 40px;
+  border: 1px solid #7c7c7c; /* Borde sólido de color gris claro */
+  border-radius: 25px;
+  width: 110%; /* Anchura flexible */
+  transition: all 0.3s; /* Transición para el enfoque */
+  background: url('ruta-del-icono-lupa.png') no-repeat right center; /* Agregar el ícono de búsqueda a la derecha del campo */
+  background-size: 20px 20px; /* Ajustar el tamaño del ícono según tus necesidades */
+  text-indent: 27px; /* Mueve el cursor 10px hacia la derecha */
+  margin-bottom: 23px;
+  font-size: 18px;
 }
 
-#search-input {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  margin-right: 10px;
-  width: 300px;
+.contenedor-principalAYUDA .search-barAYUDA #icono-search{
+  position: absolute;
+  padding: 10px;  /*verticalmente como se acomoda*/
+  color: #555;
 }
 
-#search-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+#search-input:focus {
+  border: 1px solid #007BFF; /* Cambio de estilo cuando enfocado */
+  outline: none; /* Elimina el borde predeterminado de enfoque */
 }
+
+/* Placeholder más descriptivo */
+#search-input::placeholder {
+  color: #888; /* Color de marcador de posición */
+}
+
 
 /* mi div */
 .page-container {
@@ -851,10 +854,18 @@ header {
     font-size: 12px; /* Ajustar el tamaño del subtítulo */
   }
   .search-barAYUDA {
-    background-color: #f0f0f0;
     width: 300px;
     height: 50px;
     padding: 20px;
+  }
+
+
+  .contenedor-principalAYUDA #search-input{
+    margin-bottom: 6px;
+  }
+
+  .help-section{
+    margin-top: 50px;
   }
 
   /*__________________________________________*/
