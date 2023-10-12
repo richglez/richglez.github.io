@@ -19,8 +19,8 @@ header {
 /* _____________LOGO___________________ */
 .logo {
   position: absolute;
-  top: 0;
-  left: 50px;
+  top: 50px;
+  left: 80px;
   height: 160px;
 }
 
@@ -104,9 +104,10 @@ header {
 
 /*_______________________Estilos para la barra de búsqueda_______________________ */
 #home .search-bar {
-  display: flex;
-  align-items: center;
-  margin-right: 20px; /* Espacio entre la barra de búsqueda y los botones */
+  position: fixed;
+  top: 23px; /* Ajusta la distancia desde la parte superior */
+  right: 320px; /* Ajusta la distancia desde la derecha */
+  display: inline-block;
 }
 
 #home .search-bar #textbox {
@@ -121,7 +122,7 @@ header {
 /*icono de busqueda */
 #home .search-bar #icono_busqueda {
   position: absolute;
-  padding: 2px;
+  padding: 7px;
   color: #555;
 }
 
