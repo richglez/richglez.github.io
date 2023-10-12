@@ -203,38 +203,145 @@ header {
   transition: transform 0.1s ease; /* Agrega una transición suave para suavizar el efecto */
 }
 
+
+
+
+
+
+
+
+
 /* _______________________ABOUT US_______________________ */
+/* Estilos para la sección "Acerca de Nosotros" */
 .acerca {
-  width: 100%;
-  height: auto; /* Cambiado a auto para que la altura se ajuste al contenido */
-  background: #fff;
-  overflow: hidden; /* Evitar que el contenido flote fuera del contenedor */
-  padding: 20px; /* Añadir espacio alrededor del contenido */
+  background-color: #f9f9f9; /* Color de fondo */
+  padding: 40px; /* Espaciado interno */
+}
+
+.acerca-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .acerca h1 {
-  font-size: 70px; /* Reducir el tamaño del título para que sea más legible */
+  background-color: #535353; /* Fondo del título */
+  color: #fff; /* Color del texto del título */
+  padding: 10px 0;
+  font-size: 28px; /* Tamaño del título */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.acerca-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+#img-About-Us {
+  max-width: 70%; /* Hacer que la imagen sea responsiva */
+  margin: 20px 0;
+}
+
+
+#subtitulo-quienes-somos{
+  font-size: 24px;
+}
+
+
+#infoQuienesSomos {
+  font-size: 16px; /* Tamaño del texto */
   text-align: center;
-  margin: 20px 0; /* margen entre el parrafo con el titulo superior */
-  margin-left: 500px;
+  margin: 20px 0;
+  margin-bottom: 60px;
 }
 
-.acerca p {
-  text-align: justify; /* Justifica el texto para que se ajuste al ancho */
-  margin: 0; /* Eliminar el margen predeterminado */
+
+
+.acerca #icono{
+  color: rgb(204, 74, 255);
 }
 
-.acerca #img-About-Us {
-  max-width: 700px; /* Hacer que la imagen sea responsiva */
-  height: auto; /* Permitir que la altura se ajuste proporcionalmente */
-  float: left; /* Flotar la imagen a la izquierda */
-  margin: 0 20px 20px 0; /* Espaciado alrededor de la imagen */
-  margin-left: 40px;
+
+#linea-divisora{
+  width: 700px;
+  height: 0;
 }
 
-.acerca #infoQuienesSomos {
-  text-align: justify; /* Justificar el texto para que se ajuste al ancho */
+#subtitulo-mision{
+  margin-top: 40px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
+
+#subtitulo-vision{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#subtitulo-valores{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+
+#infoMision {
+  margin-bottom: 70px; /* Establece el margen inferior solo para #infoMision */
+}
+
+#infoVision {
+  margin-bottom: 70px; /* Establece el margen inferior solo para #infoVision */
+}
+
+
+
+
+
+/* Estilos para la sección "Valores" */
+.valores-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente fila */
+  gap: 45px; /* Espaciado entre los valores */
+  justify-content: space-between; /* Alinea los valores al principio y al final del contenedor */
+}
+
+.valor {
+  flex-basis: calc(50% - 25px); /* Establece el ancho de cada valor a aproximadamente el 50% del contenedor, restando el espacio entre los valores */
+  margin-bottom: 25px; /* Espacio vertical entre los valores */
+}
+
+
+/* Estilo para los iconos */
+.valor i {
+  font-size: 24px; /* Tamaño del ícono */
+  margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+
+#icono {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; /* Ajusta el espacio entre el icono y el texto según tus preferencias */
+}
+
+
+/* Estilo para las imágenes de los valores */
+.valor img {
+  max-width: 100%; /* Hace que las imágenes se ajusten al ancho de su contenedor */
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* _______________________SERVICIOS_______________________ */
 /* Estilos para la caja de color */
@@ -243,39 +350,38 @@ header {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  height: 1200px;
+  height: auto; /* Cambia la altura a "auto" para adaptarse al contenido */
+}
+
+.services {
+  text-align: center; /* Centra el contenido horizontalmente */
+  padding: 20px;
 }
 
 .services h2 {
   font-size: 70px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   padding: 20px;
-  margin-left: 100px;
-  display: flex;
-  flex-direction: column; /* Cambia la dirección de flexbox a columna */
-  align-items: center; /* Centra los elementos verticalmente */
 }
 
-/* Estilos para la lista de servicios */
 .service-container {
   display: flex;
-  flex-direction: column; /* Organiza los servicios en una columna */
-  align-items: flex-start; /* Alínea los servicios al comienzo de la columna */
-  margin-top: 20px; /* Espaciado superior entre servicios */
+  flex-wrap: wrap; /* Permite que los servicios se ajusten automáticamente en varias filas */
+  justify-content: space-around; /* Espacio uniforme entre los servicios */
 }
 
-/* Estilos para cada servicio */
 .service {
-  background-color: #fff; /* Color de fondo para cada servicio */
+  background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px; /* Espaciado inferior entre servicios */
-  width: 100%; /* Ancho completo dentro de la columna */
+  width: calc(50% - 10px); /* Ancho del 50% con espacio entre los servicios */
   display: flex;
-  flex-direction: column; /* Cambia la dirección de flexbox a columna */
-  align-items: center; /* Centra los elementos verticalmente */
-  margin-bottom: 30px; /* Agregar margen inferior de 20px */
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-right: 30px; /* Espacio entre los servicios */
+  transition: all 0.3s; /* Agrega transición para el efecto hover */
 }
 
 .service:hover {
@@ -283,9 +389,21 @@ header {
   padding: 25px;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transform: scale(1.05); /* Aplica una escala del 105% al hacer hover */
+  transform: scale(1.05);
   cursor: pointer;
 }
+
+
+/* Agrega estos estilos para los iconos */
+.service i {
+  font-size: 36px; /* Tamaño del icono */
+  color: #007BFF; /* Color del icono */
+  margin-bottom: 10px; /* Espacio entre el icono y el texto */
+}
+
+
+
+
 
 /* _______________________AYUDA_______________________ */
 
@@ -397,32 +515,32 @@ header {
   text-align: left;
 }
 
-/* Estilo para cada elemento de la lista */
-.seccion2AYUDA .item-lista {
-  display: flex;
-  align-items: center;
-  margin-left: 760px;
-  font-size: 20px;
-  text-decoration: none;
-  color: #000;
-}
-
 /* Estilo para las flechas dentro de los elementos de la lista */
 .seccion2AYUDA .item-lista i {
   margin-right: 10px;
   font-size: 18px;
 }
 
-.seccion2AYUDA .item-lista a {
-  text-decoration: none;
-  color: #007bff;
-  transition: color 0.3s ease;
+.seccion2AYUDA .item-lista {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin: 0 auto; /* Centra horizontalmente */
+  padding: 10px 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 300px;
+}
+
+.seccion2AYUDA .item-lista a{
+  text-decoration: none;
+  color: #1f1f1f;
 }
 
 .seccion2AYUDA .item-lista a:hover {
   color: #0056b3;
+  text-decoration: underline; /* Subraya el enlace al hacer hover */
 }
 
 .seccion2AYUDA h2 {
@@ -436,17 +554,17 @@ header {
 }
 
 .seccion2AYUDA #comunity button {
-  padding: 12px 24px;
+  padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
   border: none;
-  border-radius: 30px;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 20px;
-  margin-left: 200px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
+  margin-top: 20px;
+  margin-left: 0; /* Alinea el botón al centro */
 }
 
 .seccion2AYUDA #comunity button:hover {
@@ -646,16 +764,16 @@ header {
   }
 
   /*__________________________________________*/
-
-  .services h2 {
-    font-size: 40px; /* Ajustar el tamaño del título */
-    text-align: center; /* Centrar el texto */
-    margin: 10px 70; /* margen superior e inferior */
-  }
-
-  .services h2 {
-    position: relative;
-    left: -40px;
+  
+  .service {
+    flex: 1;
+    width: 80px;
+    margin: 40px; /* Espacio entre los servicios */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.3s;
   }
 
   /*__________________________________________*/
