@@ -817,6 +817,26 @@ header {
 
 
 
+
+
+/*___________________________ AJUSTAR EL RECORRIDO de la página cuando se hace clic en un enlace __________________________________*/
+  /* Define un margen superior igual a la altura del header para las secciones objetivo */
+  #acerca-page {
+    scroll-margin-top: 90px; /* Ajusta esto al valor de la altura del header */
+  }
+
+
+  #seccion-servicios-pagina{
+    scroll-margin-top: 90px; /* Ajusta esto al valor de la altura del header */
+  }
+
+  #help{
+    scroll-margin-top: 120px; /* Ajusta esto al valor de la altura del header */
+  }
+/*______________________________________________________________________________________________________________________________*/
+
+
+
   .register #btnRegister{
     display: none;
   }
@@ -918,7 +938,7 @@ header {
 
 
 
-#nav-menu-desplegable{
+#nav-menu-desplegable{  /*div*/
   position: fixed;
   height: 75vh;
   width: 100%;
@@ -932,18 +952,21 @@ header {
 }
 
 
-
+/*-----logo--------*/
 #nav-menu-desplegable .logo{
     position: absolute;
-    top: 610px;
+    top: 580px;
     left: 150px;
+    height: 17%;
   }
 
+/*------------------*/
 #nav-menu-desplegable .list_item {  /* mis enlaces */
     font-size: 26px;
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
+    animation: fadeInFromBottom 1.5s ease; /* 1s de duración con una función de temporización "ease" */
   }
 
 #nav-menu-desplegable .list_item a{ /* mi enlace texto */
@@ -1073,8 +1096,7 @@ header {
 
   /* Estilos para la seccion de ayuda en dispositivos móviles */
   .contenedor-principalAYUDA {
-    margin: 20px; /* Agregar un margen para separar la sección del borde de la pantalla */
-    padding: 10px; /* Añadir un poco de espacio interno para que el contenido respire */
+    margin-top: 70px;
     margin-left: 20px; /* Alinear el contenido al borde izquierdo de la pantalla */
     margin-right: 20px; /* Alinear el contenido al borde derecho de la pantalla */
     border-radius: 0; /* Quitar el borde redondeado para que se vea más rectangular */
