@@ -800,14 +800,6 @@ header {
 
 @media screen and (max-width: 768px) {
 
-  #nav-menu-desplegable{
-    display: block;
-  }
-
-  #nav-menu-escritorio{
-    display: none;
-  }
-
   header{
     position: fixed;
     background: rgb(255, 255, 255);
@@ -820,26 +812,6 @@ header {
 
   body header {
     overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
-  }
-
-
-
-  header #menu-icon {
-    text-decoration: none;
-    text-align: center;
-    display: block; /* Mostrar el icono de menú */
-    position: fixed; /* Posición fija para mantenerlo en su lugar */
-    top: 23px; /* Ajustar la distancia desde la parte superior según tu preferencia */
-    right: 20px; /* Ajustar la distancia desde la derecha según tu preferencia */
-    z-index: 999; /* Establecer un índice z alto para asegurarse de que esté en la parte superior */
-    width: 13%; /*acnho de mi wrapper*/
-    font-size: 39px;  /*heiht de mi icono*/
-    border: solid #535353;
-    background-color: hsl(169, 100%, 81%);
-      /* Cambia el color de la imagen */
-    border-radius: 10px;
-    color: #161616;
-    box-shadow: 0px 0px 14px rgba(0,0,0,0.23);  /* sombreado */
   }
 
 
@@ -905,6 +877,35 @@ header {
 /* _______________________MENU DESPLEGABLE_______________________ */
 
 
+
+#nav-menu-desplegable{
+  display: block;
+}
+
+#nav-menu-escritorio{
+  display: none;
+}
+
+
+
+#menu-icon {
+  text-decoration: none;
+  text-align: center;
+  display: block; /* Mostrar el icono de menú */
+  position: fixed; /* Posición fija para mantenerlo en su lugar */
+  top: 23px; /* Ajustar la distancia desde la parte superior según tu preferencia */
+  right: 20px; /* Ajustar la distancia desde la derecha según tu preferencia */
+  z-index: 999; /* Establecer un índice z alto para asegurarse de que esté en la parte superior */
+  width: 13%; /*acnho de mi wrapper*/
+  font-size: 39px;  /*heiht de mi icono*/
+  border: solid #535353;
+  background-color: hsl(169, 100%, 81%);
+    /* Cambia el color de la imagen */
+  border-radius: 10px;
+  color: #161616;
+  box-shadow: 0px 0px 14px rgba(0,0,0,0.23);  /* sombreado */
+}
+
 #menu-icon {
   transition: transform 0.3s ease;
 }
@@ -919,7 +920,7 @@ header {
 
 #nav-menu-desplegable{
   position: fixed;
-  height: 80vh;
+  height: 75vh;
   width: 100%;
   background: rgb(218, 255, 180);
   background: linear-gradient(47deg, rgba(218, 255, 180, 1) 12%, rgba(116, 227, 210, 1) 100%);
@@ -927,6 +928,7 @@ header {
   overflow: hidden;
   z-index: 1;
   margin-top: 90px;
+  animation: fadeInFromBottom 0.8s ease forwards; /* 1s de duración con una función de temporización "ease" */
 }
 
 
@@ -982,7 +984,7 @@ header {
 
   .logo {
     height: 100px;
-    margin-top: 20px;
+    margin-top: -100px;
     left: 30px; /* Ajusta la posición izquierda según tu preferencia SIN ESPACIOS EN BLANCOS!!!! */
 
   }
