@@ -1047,7 +1047,7 @@ header {
 
 
 
-  /*__________________________________________*/
+  /*___________________SERVICIOS_______________________*/
   
   .service {
     flex: 1;
@@ -1060,7 +1060,16 @@ header {
     transition: all 0.3s;
   }
 
-  /*__________________________________________*/
+  box-services{
+    margin-top: 20px;
+  }
+
+
+
+
+
+
+  /*_______________AYUDA___________________________*/
 
   /* Estilos para la seccion de ayuda en dispositivos móviles */
   .contenedor-principalAYUDA {
