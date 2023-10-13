@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const rect = service.getBoundingClientRect();
 
             // Comprueba si más del 50% del servicio está visible
-            if (rect.top >= 0 && rect.bottom <= window.innerHeight * 0.5) {
+            if (rect.top >= 0 && rect.bottom <= window.innerHeight * 0.9) {
                 service.classList.add('active');
             } else {
                 service.classList.remove('active');
