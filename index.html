@@ -77,14 +77,6 @@
     </header>
     <!--Aqui termina la Barra -->
 
-
-
-
-
-
-
-
-
     <!-- ----------------Menú para dispositivos moviles----------------- -->
     <!-- Este es el contenedor del menú -->
     <nav class="nav" id="nav-menu-desplegable">
@@ -100,7 +92,9 @@
             <br />
             <!--Para poder centrar los elementos-->
             <i class="bx bxs-home-alt-2" id="En_menuIconoHome"></i>
-            <a href="#" class="nav_link nav_link--inside" onclick="goToHome()">Inicio</a>
+            <a href="#" class="nav_link nav_link--inside" onclick="goToHome()"
+              >Inicio</a
+            >
           </div>
         </li>
 
@@ -122,7 +116,11 @@
             <br />
             <!--Para poder centrar los elementos-->
             <i class="bx bxs-book-content"></i>
-            <a href="#seccion-servicios-pagina" class="nav_link nav_link--inside">Servicios</a>
+            <a
+              href="#seccion-servicios-pagina"
+              class="nav_link nav_link--inside"
+              >Servicios</a
+            >
           </div>
         </li>
 
@@ -163,11 +161,6 @@
     </nav>
     <!-- ------------------------------------------------------------------- -->
 
-
-
-
-
-
     <!-- ----------------Menú para dispositivos de escritorio----------------- -->
     <nav id="nav-menu-escritorio">
       <!-- Contenido del menú de navegación para dispositivos de escritorio -->
@@ -207,7 +200,11 @@
             <br />
             <!--Para poder centrar los elementos-->
             <i class="bx bxs-book-content"></i>
-            <a href="#seccion-servicios-pagina" class="nav_link nav_link--inside">Servicios</a>
+            <a
+              href="#seccion-servicios-pagina"
+              class="nav_link nav_link--inside"
+              >Servicios</a
+            >
           </div>
         </li>
 
@@ -255,7 +252,10 @@
         Plataforma y aplicación digital para ayudar a adultos mayores de edad.
       </p>
 
-      <p></p>
+      <!--imagen-->
+      <div class="imagenEnzabezado">
+        <img src="./images/grab-uIKlD9dc_Bc-unsplash.jpg" alt="" id="imagen" />
+      </div>
     </div>
 
     <br />
@@ -634,8 +634,6 @@
             menuAbierto = false;
           }
 
-
-
           menuIcon.click(function () {
             if (menuAbierto) {
               cerrarMenu();
@@ -649,16 +647,14 @@
             cerrarMenu();
           });
 
-
           //Al farle click al icono del menu:
           $(document).click(function (e) {
             if (
               menuAbierto &&
               !$(e.target).closest("#nav-menu-desplegable").length &&
               !$(e.target).is("#menu-icon")
-            ) 
-            
-            { //else?
+            ) {
+              //else?
               cerrarMenu();
             }
           });
@@ -671,9 +667,6 @@
         }
       });
     </script>
-
-
-    
   </body>
 
   <!-- FINAL DEL BODY -->
