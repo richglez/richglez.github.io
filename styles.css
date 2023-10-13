@@ -8,6 +8,11 @@
 }
 
 
+
+
+
+
+
 @keyframes fadeInFromBottom {
   0% {
     transform: translateY(100%);
@@ -17,6 +22,14 @@
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+
+
+.animate-on-scroll {  /*definir la animación*/
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 
@@ -188,12 +201,19 @@ header {
 }
 
 /* _______________________MENU LATERAL_______________________ */
+#nav-menu-desplegable{
+  display: none;
+}
 
-.nav {
+#nav-menu-escritorio{
+  display: block;
+}
+
+#nav-menu-escritorio {
   width: 320px;
 }
 
-.nav .list {
+#nav-menu-escritorio .list {
   width: 130%;
   height: 100vh;
   display: flex;
@@ -203,7 +223,7 @@ header {
   background: #fff;
 }
 
-.nav .list_item {
+#nav-menu-escritorio .list_item {
   font-size: 20px;
   list-style: none;
   width: 100%;
@@ -212,7 +232,7 @@ header {
   text-align: left; /* Alinea el texto a la izquierda */
 }
 
-.nav .list_button {
+#nav-menu-escritorio .list_button {
   display: flex;
   align-items: center;
   gap: 1em;
@@ -220,16 +240,19 @@ header {
   margin: 0 auto;
 }
 
-.nav_link {
+#nav-menu-escritorio .nav_link {
   color: #303440;
   display: block;
   padding: 15px 0;
   text-decoration: none;
 }
 
-.nav .list_item:hover {
+#nav-menu-escritorio .list_item:hover {
   background: #dbe8ec;
 }
+
+
+
 
 /* Estilos para el icono */
 
@@ -777,6 +800,14 @@ header {
 
 @media screen and (max-width: 768px) {
 
+  #nav-menu-desplegable{
+    display: block;
+  }
+
+  #nav-menu-escritorio{
+    display: none;
+  }
+
   header{
     position: fixed;
     background: rgb(255, 255, 255);
@@ -784,6 +815,7 @@ header {
     width: 100%;
     display: inline-block;
     z-index: 2;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.23);  /* sombreado */
   }
 
   body header {
@@ -807,6 +839,7 @@ header {
       /* Cambia el color de la imagen */
     border-radius: 10px;
     color: #161616;
+    box-shadow: 0px 0px 14px rgba(0,0,0,0.23);  /* sombreado */
   }
 
 
@@ -878,9 +911,10 @@ header {
 }
 
 
-  .nav .list{  /* wrapper de mi menu */
+#nav-menu-desplegable .list{  /* wrapper de mi menu */
     position: fixed;
-    height: 87vh; /* Inicialmente establece la altura en 0 para ocultar el menú */
+    height: 80vh; /* Inicialmente establece la altura en 0 para ocultar el menú */
+    width: 100%;
     background: rgb(218,255,180);
     background: linear-gradient(47deg, rgba(218,255,180,1) 12%, rgba(116,227,210,1) 100%);
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
@@ -888,31 +922,31 @@ header {
     transition: max-height 0.3s ease; /* Agrega una transición */
     z-index: 1;
     transition: height 0.3s ease; /* Animación de la altura */
+    margin-top: 90px;
   }
 
 
-  .nav .list.active {
+#nav-menu-desplegable .list.active {
     height: 87vh;
   }
 
 
-
-
-  .nav .logo{
+#nav-menu-desplegable .logo{
     position: absolute;
     top: 610px;
     left: 150px;
   }
 
-  .nav .list_item {  /* mis enlaces */
+#nav-menu-desplegable .list_item {  /* mis enlaces */
     font-size: 26px;
     font-weight: 500;
     text-transform: uppercase;
+    text-align: center;
   }
 
-  .nav .list_item a{ /* mi enlace texto */
+#nav-menu-desplegable .list_item a{ /* mi enlace texto */
     color: #333; /* Gris oscuro */
-    margin-right: 330px;
+    text-decoration: none;
   }
 
 

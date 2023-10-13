@@ -77,8 +77,102 @@
     </header>
     <!--Aqui termina la Barra -->
 
+
+
+
+
+
+
+
+
+    <!-- ----------------Menú para dispositivos moviles----------------- -->
     <!-- Este es el contenedor del menú -->
     <nav class="nav" id="nav-menu-desplegable">
+      <!-- LOGO -->
+      <img src="images/logo-automatizando.png" alt="" srcset="" class="logo" />
+      <ul class="list">
+        <br /><br />
+        <!--Salto de linea para dejar espacio con en logo-->
+
+        <!-- opcion 1 Inicio-->
+        <li class="list_item">
+          <div class="list_button">
+            <br />
+            <!--Para poder centrar los elementos-->
+            <i class="bx bxs-home-alt-2" id="En_menuIconoHome"></i>
+            <a href="#home" class="nav_link nav_link--inside" id="En_menuHome"
+              >Inicio</a
+            >
+          </div>
+        </li>
+
+        <!-- opcion 2 Acerca de nosotros-->
+        <li class="list_item">
+          <div class="list_button list_button--click">
+            <br />
+            <!--Para poder centrar los elementos-->
+            <i class="bx bxs-business"></i>
+            <a href="#acerca" class="nav_link nav_link--inside"
+              >Acerca de nosotros</a
+            >
+          </div>
+        </li>
+
+        <!-- opcion 3 Servicios-->
+        <li class="list_item">
+          <div class="list_button">
+            <br />
+            <!--Para poder centrar los elementos-->
+            <i class="bx bxs-book-content"></i>
+            <a href="#servicios" class="nav_link nav_link--inside">Servicios</a>
+          </div>
+        </li>
+
+        <!-- opcion 4 Asistente Virtual(Chatbot)-->
+        <li class="list_item">
+          <div class="list_button">
+            <br />
+            <!--Para poder centrar los elementos-->
+            <i class="bx bxs-message-alt-dots"></i>
+            <a href="chatbot.html" class="nav_link nav_link--inside"
+              >Asistente Virtual</a
+            >
+          </div>
+        </li>
+
+        <!-- opcion 5 Ayuda y Soporte-->
+        <li class="list_item">
+          <div class="list_button">
+            <br />
+            <!--Para poder centrar los elementos-->
+            <i class="bx bxs-help-circle"></i>
+            <a href="#help" class="nav_link nav_link--inside"
+              >Ayuda y Soporte</a
+            >
+          </div>
+        </li>
+
+        <!-- opcion 6 Contacto-->
+        <li class="list_item">
+          <div class="list_button">
+            <br />
+            <!--Para poder centrar los elementos-->
+            <i class="bx bx-mail-send"></i>
+            <a href="#footer" class="nav_link nav_link--inside">Contactanos</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!-- ------------------------------------------------------------------- -->
+
+
+
+
+
+    
+    <!-- ----------------Menú para dispositivos de escritorio----------------- -->
+    <nav id="nav-menu-escritorio">
+      <!-- Contenido del menú de navegación para dispositivos de escritorio -->
       <!-- LOGO -->
       <img src="images/logo-automatizando.png" alt="" srcset="" class="logo" />
       <ul class="list">
@@ -516,59 +610,61 @@
       </section>
     </footer>
 
-
-
-
-
     <!-- ********************************SCRIPT - MENU DESPLEGABLE********************************* -->
     <!-- Agrega esto al final de tu página HTML antes del cierre del body -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       $(document).ready(function () {
-        // Selecciona el icono de menú
-        var menuIcon = $("#menu-icon");
-    
-        // Selecciona el menú desplegable
-        var navMenuDesplegable = $("#nav-menu-desplegable");
-    
-        var menuAbierto = false; // Variable para rastrear el estado del menú
-    
-        // Función para abrir el menú
-        function abrirMenu() {
-          navMenuDesplegable.show();
-          menuAbierto = true;
-        }
-    
-        // Función para cerrar el menú
-        function cerrarMenu() {
-          navMenuDesplegable.hide();
-          menuAbierto = false;
-        }
-    
-        // Agrega un evento de clic al icono de menú para alternar entre abrir y cerrar
-        menuIcon.click(function () {
-          if (menuAbierto) {
-            cerrarMenu();
-          } else {
-            abrirMenu();
+        var isMobile =
+          /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+            window.navigator.userAgent
+          );
+
+        if (isMobile) {
+          // Si es un dispositivo móvil
+          var menuIcon = $("#menu-icon");
+          var navMenuDesplegable = $("#nav-menu-desplegable");
+          var menuAbierto = false;
+
+          function abrirMenu() {
+            navMenuDesplegable.show();
+            menuAbierto = true;
           }
-          menuIcon.toggleClass("active"); // Agrega o quita la clase "active"
-        });
-    
-        // Agrega un evento de clic a los enlaces del menú para cerrar el menú
-        navMenuDesplegable.find(".nav_link").click(function () {
+
+          function cerrarMenu() {
+            navMenuDesplegable.hide();
+            menuAbierto = false;
+          }
+
+          menuIcon.click(function () {
+            if (menuAbierto) {
+              cerrarMenu();
+            } else {
+              abrirMenu();
+            }
+            menuIcon.toggleClass("active");
+          });
+
+          navMenuDesplegable.find(".nav_link").click(function () {
+            cerrarMenu();
+          });
+
+          $(document).click(function (e) {
+            if (
+              menuAbierto &&
+              !$(e.target).closest("#nav-menu-desplegable").length &&
+              !$(e.target).is("#menu-icon")
+            ) {
+              cerrarMenu();
+            }
+          });
+
           cerrarMenu();
-        });
-    
-        // Agrega un evento de clic al documento para cerrar el menú si se hace clic en cualquier parte fuera del menú desplegable
-        $(document).click(function (e) {
-          if (menuAbierto && !$(e.target).closest("#nav-menu-desplegable").length && !$(e.target).is("#menu-icon")) {
-            cerrarMenu();
-          }
-        });
-    
-        // Oculta el menú al cargar la página
-        cerrarMenu();
+        } else {
+          // Si es un dispositivo de escritorio, no ocultes el menú de navegación a la izquierda
+          var navMenuEscritorio = $("#nav-menu-escritorio");
+          navMenuEscritorio.show();
+        }
       });
     </script>
   </body>
