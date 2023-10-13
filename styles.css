@@ -1047,7 +1047,7 @@ header {
     margin: 10px 0; /* margen superior e inferior */
   }
 
-
+  /*__________________________VALORES________________________________*/
   .acerca .valores-wrapper .valor{
     background-color: #fcfcfc;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);

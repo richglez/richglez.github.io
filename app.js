@@ -20,6 +20,26 @@ function animateOnScroll() {
 
 
 
+//Luego, utiliza JavaScript para detectar el evento de desplazamiento y agregar o quitar la clase .active a los elementos .valor en función del desplazamiento:
+document.addEventListener('DOMContentLoaded', function() {
+    const valores = document.querySelectorAll('.acerca .valores-wrapper .valor');
+
+    window.addEventListener('scroll', function() {
+        valores.forEach(function(valor) {
+            const rect = valor.getBoundingClientRect();
+
+            if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                valor.classList.add('active');
+            } else {
+                valor.classList.remove('active');
+            }
+        });
+    });
+});
+
+
+
+
 // Agregar un event listener para el evento "scroll"
 window.addEventListener('scroll', animateOnScroll);
 window.addEventListener('load', animateOnScroll); // Animar elementos cuando se carga la página
