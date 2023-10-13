@@ -1047,6 +1047,12 @@ header {
     margin: 10px 0; /* margen superior e inferior */
   }
 
+
+
+
+
+
+
   /*__________________________VALORES________________________________*/
   .acerca .valores-wrapper .valor{
     background-color: #fcfcfc;
@@ -1057,11 +1063,13 @@ header {
     transition: all 0.3s; /* Agregar una transición suave para los cambios */
   }
 
-  .acerca .valores-wrapper .valor:hover {
-    background-color: #beedff; /* Cambiar el color de fondo a azul claro al pasar el ratón */
+
+  .acerca .valores-wrapper .valor.active {
+    /* Estilos adicionales cuando se aplica la clase .active */
+    background-color: #ffcc81; /* Cambiar el color de fondo a azul claro al pasar el ratón */
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); /* Aumentar la sombra al pasar el ratón */
-    transform: scale(1.1); /* Aumentar el tamaño al pasar el ratón */
-  }
+    transform: scale(1.1); /* Aumentar el tamaño al pasar el dedo deslizado */
+}
 
 
 
