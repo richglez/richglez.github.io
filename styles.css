@@ -31,25 +31,28 @@ header {
   height: 160px;
 }
 
+
+
+
 /* _______________________AUTOMATIZANDO A SABIOS - TITULO_______________________ */
-.titulo h1 {
-  display: flex;
-  justify-content: center;
+.titulo {
+  position: absolute;
   align-items: center;
   text-align: center;
-  margin-left: 200px;
+  top: 250px;
+  left: 700px;
+  z-index: -1;
+}
+
+.titulo h1 {
   font-size: 80px;
-  transition: opacity 1s ease-in-out;
+  margin: 0; /* Elimina todos los márgenes */
 }
 
 .titulo p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  
   font-weight: 400;
-  margin-right: 70px;
-  margin-left: 250px;
+  margin: 0; /* Elimina todos los márgenes */
 }
 
 /* _______________________LOGIN y REGISTER BOTON_______________________ */
@@ -254,6 +257,42 @@ header {
 }
 
 
+.acerca #subtitulo-quienes-somos{
+  font-size: 55px; /* Reducir el tamaño del título */
+}
+
+
+.acerca #infoQuienesSomos{
+  font-size: 20px;
+}
+
+.acerca #subtitulo-mision{
+  font-size: 40px;
+}
+
+.acerca #infoMision{
+  font-size: 19px;
+}
+
+
+.acerca #subtitulo-vision{
+  font-size: 40px;
+}
+
+.acerca #infoVision{
+  font-size: 19px;
+}
+
+.acerca #subtitulo-valores{
+  font-size: 40px;
+}
+
+.acerca .valores-wrapper{
+  font-size: 19px;
+
+}
+
+
 
 
 #img-About-Us {
@@ -422,6 +461,13 @@ header {
 
 /* _______________________AYUDA_______________________ */
 
+
+/* mi div */
+.page-container {
+  min-height: 100vh; /* que ocupe todo el tamano de la pagina*/
+  background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+}
+
 /* Estilos para la barra de búsqueda */
 .contenedor-principalAYUDA #search-input {
   padding: 10px;
@@ -434,6 +480,7 @@ header {
   text-indent: 27px; /* Mueve el cursor 10px hacia la derecha */
   margin-bottom: 23px;
   font-size: 18px;
+  
 }
 
 .contenedor-principalAYUDA .search-barAYUDA #icono-search{
@@ -453,17 +500,12 @@ header {
 }
 
 
-/* mi div */
-.page-container {
-  min-height: 100vh; /* que ocupe todo el tamano de la pagina*/
-}
 
 .contenedor-principalAYUDA #ayudaTitulo {
   padding-bottom: 60px;
 }
 
 .contenedor-principalAYUDA {
-  margin-top: 50px;
   margin-left: 700px;
   display: flex;
   flex-direction: column;
@@ -513,6 +555,7 @@ header {
 
 /* _______________________Estilos para la sección 2 de Ayuda_______________________ */
 .seccion2AYUDA {
+  margin-top: -30px;
   min-height: 60vh; /*maxima altura de la pagina en esta seccion*/
   background-image: linear-gradient(120deg, #fdfbfbe8 50%, #ebedeec2 100%);
   border-radius: 30px;
@@ -613,6 +656,10 @@ header {
   font-size: 38px;
   box-shadow: 1px 5px 30px rgba(0, 0, 0, 0.3);
 }
+
+
+
+
 
 /* _______________________REVIEWS_______________________ */
 /* Estilos generales para la sección de reseñas */
@@ -772,6 +819,32 @@ header {
 
 
 
+  .titulo {
+    position: static; /* Cambia a posición estática */
+    top: auto; /* Elimina la propiedad top */
+    left: auto; /* Elimina la propiedad left */
+    z-index: auto; /* Elimina la propiedad z-index */
+    text-align: center; /* Alinea el texto al centro */
+    
+  }
+
+
+  body .titulo h1{
+    font-size: 50px;
+    margin-left: 200px;
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+
+
+  body .titulo p{
+    font-weight: 500;
+    color: #161616;
+    font-size: 30px;
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+
+
+
 
 
   .nav {
@@ -844,6 +917,23 @@ header {
   .acerca p {
     text-align: center; /* Centrar el texto */
     margin: 10px 0; /* margen superior e inferior */
+  }
+
+  .acerca .valores-wrapper .valor:hover {
+    background-color: #beedff; /* Cambiar el color de fondo a azul claro al pasar el ratón */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); /* Aumentar la sombra al pasar el ratón */
+    transform: scale(1.1); /* Aumentar el tamaño al pasar el ratón */
+  }
+
+
+
+
+  .acerca .valores-wrapper .valor{
+    background-color: #fcfcfc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 800px;
+    flex-basis: calc(100% - 0px); /* Establece el ancho de cada valor a aproximadamente el 50% del contenedor, restando el espacio entre los valores */
+    margin-bottom: 25px; /* Espacio vertical entre los valores */
   }
 
   /*__________________________________________*/
