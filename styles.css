@@ -8,8 +8,15 @@
 }
 
 body {
-  background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+  background: rgb(117,201,188);
+  background: linear-gradient(90deg, rgba(117,201,188,1) 0%, rgb(139, 238, 212) 20%, rgb(88, 215, 147) 69%);
 }
+
+#menu-icon{
+  display: none;  /*Quitar el icono de menu*/
+}
+
+
 
 header {
   display: flex; /* Utiliza flexbox para alinear elementos en una fila */
@@ -46,7 +53,8 @@ header {
 
 /* _______________________LOGIN y REGISTER BOTON_______________________ */
 
-.login {
+.login #btnLogin-web{
+  display: block;
   position: fixed;
   top: 20px; /* Ajusta la distancia desde la parte superior */
   right: 20px; /* Ajusta la distancia desde la derecha */
@@ -61,7 +69,7 @@ header {
   cursor: pointer; /* Cambia el cursor al pasar el mouse sobre el botón */
 }
 
-.login:hover {
+.login #btnLogin-web:hover {
   background-color: #e37d00; /* Cambia el color de fondo al pasar el mouse */
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
@@ -69,12 +77,17 @@ header {
   transition: 1s;
 }
 
+
+.login #btnLogin-mobile{
+  display: none;
+}
+
 .login a {
   text-decoration: none;
   color: #fff;
 }
 
-.register {
+.register #btnRegister {
   position: fixed;
   top: 20px; /* Ajusta la distancia desde la parte superior */
   right: 170px; /* Ajusta la distancia desde la derecha */
@@ -89,7 +102,7 @@ header {
   cursor: pointer; /* Cambia el cursor al pasar el mouse sobre el botón */
 }
 
-.register:hover {
+.register #btnRegister:hover {
   background-color: #519bd8; /* Cambia el color de fondo al pasar el mouse */
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
@@ -97,7 +110,7 @@ header {
   transition: 1s;
 }
 
-.register a {
+.register #btnRegister {
   text-decoration: none;
   color: #fff;
 }
@@ -692,44 +705,107 @@ header {
   color: #64b3f4;
 }
 
+
+
+
 @media screen and (max-width: 844px) {
+
+  header{
+    position: fixed;
+    background: rgb(255, 255, 255);
+    height: 90px;
+    width: 100%;
+    display: inline-block;
+    z-index: 2;
+  }
+
   body header {
     overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
   }
 
-  .titulo h1 {
-    font-size: 40px; /* Reducir el tamaño de fuente en pantalla pequeña */
+
+
+  header #menu-icon {
+    text-align: center;
+    display: block; /* Mostrar el icono de menú */
+    position: fixed; /* Posición fija para mantenerlo en su lugar */
+    top: 23px; /* Ajustar la distancia desde la parte superior según tu preferencia */
+    right: 20px; /* Ajustar la distancia desde la derecha según tu preferencia */
+    z-index: 999; /* Establecer un índice z alto para asegurarse de que esté en la parte superior */
+    width: 13%; /*acnho de mi wrapper*/
+    font-size: 39px;  /*heiht de mi icono*/
+    border: solid #535353;
+    background-color: hsl(169, 100%, 81%);
+      /* Cambia el color de la imagen */
+    border-radius: 10px;
   }
-  .titulo p {
-    font-size: 14px; /* Reducir el tamaño de fuente en pantalla pequeña */
+
+
+
+
+  .register #btnRegister{
+    display: none;
   }
+
+
+  .login #btnLogin-web{
+    display: none;
+  }
+  
+  .login #btnLogin-mobile{
+    display: block;
+    position: fixed;
+    top: 25px; /* Ajusta la distancia desde la parte superior */
+    right: 20px; /* Ajusta la distancia desde la derecha */
+    display: inline-block;
+    background-color: #cc8e2b; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Relleno interno del botón */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Alineación del texto */
+    font-size: 16px; /* Tamaño de letra */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse sobre el botón */
+    margin-right: 65px;
+  }
+
+
+
+
+
   .nav {
-    width: 34%; /* Cambia el ancho del menú lateral a 100% en dispositivos móviles */
+    display: none;
   }
 
   .nav .list_item {
     font-size: 14px;
   }
+
+
+
   .titulo h1 {
-    position: relative;
-    top: 80px;
-    left: -125px;
-    font-size: 22px;
+    margin-top: 190px;
+    position: absolute;
+    left: -200px;
+    font-size: 52px;
     align-items: center;
+    font-weight: 800;
+
   }
 
   .titulo p {
     position: relative;
     left: -30px;
-    margin: 100px; /*ajustar el texto para que no se vea como tipo lista y que se vea como un parrafo*/
-    font-size: 12px;
+    margin: 30px; /*ajustar el texto para que no se vea como tipo lista y que se vea como un parrafo*/
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 350px;
+    margin-left: 80px;
   }
 
   .logo {
-    height: 110px;
-    margin-top: 120px;
-    margin-bottom: 30px;
-    top: -90px; /*posicionar el elemento en la parte superior de su contenedo*/
+    height: 100px;
+    margin-top: 20px;
     left: 30px; /* Ajusta la posición izquierda según tu preferencia SIN ESPACIOS EN BLANCOS!!!! */
 
   }
@@ -869,3 +945,14 @@ header {
 
   /*__________________________________________*/
 }
+
+
+
+
+
+
+
+
+
+
+

@@ -25,6 +25,7 @@ body {
     backdrop-filter: blur(8px); /* Ajusta el valor de desenfoque según tu preferencia */
     background-color: rgba(255, 255, 255, 0.5); /* Añade opacidad al fondo */
   }
+
   
   .wrapper {
     width: 420px;

@@ -35,123 +35,25 @@
   </head>
 
   <body>
-    <!-- HOME pagina principal-->
+    <!--Barra -->
     <header id="home">
-      <!-- Este es el contenedor del menú -->
-      <nav class="nav">
-        <ul class="list">
-          <br /><br />
-          <!--Salto de linea para dejar espacio con en logo-->
-
-          <!-- LOGO -->
-          <img
-            src="images/logo-automatizando.png"
-            alt=""
-            srcset=""
-            class="logo"
-          />
-
-          <!-- opcion 1 Inicio-->
-          <li class="list_item">
-            <div class="list_button">
-              <br />
-              <!--Para poder centrar los elementos-->
-              <i class="bx bxs-home-alt-2" id="En_menuIconoHome"></i>
-              <a href="#home" class="nav_link nav_link--inside" id="En_menuHome"
-                >Inicio</a
-              >
-            </div>
-          </li>
-
-          <!-- opcion 2 Acerca de nosotros-->
-          <li class="list_item">
-            <div class="list_button list_button--click">
-              <br />
-              <!--Para poder centrar los elementos-->
-              <i class="bx bxs-business"></i>
-              <a href="#acerca" class="nav_link nav_link--inside"
-                >Acerca de nosotros</a
-              >
-            </div>
-          </li>
-
-          <!-- opcion 3 Servicios-->
-          <li class="list_item">
-            <div class="list_button">
-              <br />
-              <!--Para poder centrar los elementos-->
-              <i class="bx bxs-book-content"></i>
-              <a href="#servicios" class="nav_link nav_link--inside"
-                >Servicios</a
-              >
-            </div>
-          </li>
-
-          <!-- opcion 4 Asistente Virtual(Chatbot)-->
-          <li class="list_item">
-            <div class="list_button">
-              <br />
-              <!--Para poder centrar los elementos-->
-              <i class="bx bxs-message-alt-dots"></i>
-              <a href="chatbot.html" class="nav_link nav_link--inside"
-                >Asistente Virtual</a
-              >
-            </div>
-          </li>
-
-          <!-- opcion 5 Ayuda y Soporte-->
-          <li class="list_item">
-            <div class="list_button">
-              <br />
-              <!--Para poder centrar los elementos-->
-              <i class="bx bxs-help-circle"></i>
-              <a href="#help" class="nav_link nav_link--inside"
-                >Ayuda y Soporte</a
-              >
-            </div>
-          </li>
-
-          <!-- opcion 6 Contacto-->
-          <li class="list_item">
-            <div class="list_button">
-              <br />
-              <!--Para poder centrar los elementos-->
-              <i class="bx bx-mail-send"></i>
-              <a href="#footer" class="nav_link nav_link--inside"
-                >Contactanos</a
-              >
-            </div>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="titulo">
-        <h1>Automatizando a Sabios</h1>
-
-        <br />
-        <p>
-          Una plataforma y aplicación digital para ayudar a adultos mayores de
-          edad en la Ciudad de México. Disminuyendo la brecha digital por medio
-          de cursos y actividades de aprendizaje digital.
-        </p>
-
-        <p></p>
-      </div>
-
+      <!----------------------BARRA DE NAVEGACION----------------------------->
+      <a href="#home" id="Back-Home">
+        <i class="bx bxs-home" id="id-Home_icon"></i>
+      </a>
+      <i class="bx bx-menu" id="menu-icon"></i>
       <!----------------------LOGIN & register----------------------------->
-      <div class="barra">
-        <div class="login">
-          <a href="login.html">Iniciar Sesion</a>
-          <!--btn-->
-        </div>
-
-        <div class="register">
-          <a href="register.html">Registrarse</a>
-          <!--btn-->
-        </div>
+      <div class="login">
+        <!--Wrapper de login, en si el relleno del boton-->
+        <a href="login.html" id="btnLogin-web">Iniciar Sesion</a>
+        <a href="login.html" id="btnLogin-mobile">Unete</a>
       </div>
 
-      <!----------------------barra de busqueda (SEARCH)----------------------------->
+      <div class="register">
+        <!--Wrapper de register, en si el relleno del boton-->
+        <a href="register.html" id="btnRegister">Registrarse</a>
+        <!--btn-->
+      </div>
 
       <!-- Barra de búsqueda -->
       <div class="search-bar" id="search-bar">
@@ -159,18 +61,105 @@
         <input type="text" id="textbox" placeholder="Buscar..." />
       </div>
     </header>
-    <!----------------------LOGIN & register----------------------------->
-    <div class="barra">
-      <div class="login">
-        <a href="login.html">Iniciar Sesion</a>
-        <!--btn-->
-      </div>
+    <!--Aqui termina la Barra -->
 
-      <div class="register">
-        <a href="register.html">Registrarse</a>
-        <!--btn-->
-      </div>
+    <!-- Este es el contenedor del menú -->
+    <nav class="nav">
+      <ul class="list">
+        <br /><br />
+        <!--Salto de linea para dejar espacio con en logo-->
+
+        <!-- LOGO -->
+        <img
+          src="images/logo-automatizando.png"
+          alt=""
+          srcset=""
+          class="logo"
+        />
+
+        <!-- opcion 1 Inicio-->
+        <li class="list_item">
+          <div class="list_button">
+            <br />
+            <!--Para poder centrar los elementos-->
+            <i class="bx bxs-home-alt-2" id="En_menuIconoHome"></i>
+            <a href="#home" class="nav_link nav_link--inside" id="En_menuHome"
+              >Inicio</a
+            >
+          </div>
+        </li>
+
+        <!-- opcion 2 Acerca de nosotros-->
+        <li class="list_item">
+          <div class="list_button list_button--click">
+            <br />
+            <!--Para poder centrar los elementos-->
+            <i class="bx bxs-business"></i>
+            <a href="#acerca" class="nav_link nav_link--inside"
+              >Acerca de nosotros</a
+            >
+          </div>
+        </li>
+
+        <!-- opcion 3 Servicios-->
+        <li class="list_item">
+          <div class="list_button">
+            <br />
+            <!--Para poder centrar los elementos-->
+            <i class="bx bxs-book-content"></i>
+            <a href="#servicios" class="nav_link nav_link--inside">Servicios</a>
+          </div>
+        </li>
+
+        <!-- opcion 4 Asistente Virtual(Chatbot)-->
+        <li class="list_item">
+          <div class="list_button">
+            <br />
+            <!--Para poder centrar los elementos-->
+            <i class="bx bxs-message-alt-dots"></i>
+            <a href="chatbot.html" class="nav_link nav_link--inside"
+              >Asistente Virtual</a
+            >
+          </div>
+        </li>
+
+        <!-- opcion 5 Ayuda y Soporte-->
+        <li class="list_item">
+          <div class="list_button">
+            <br />
+            <!--Para poder centrar los elementos-->
+            <i class="bx bxs-help-circle"></i>
+            <a href="#help" class="nav_link nav_link--inside"
+              >Ayuda y Soporte</a
+            >
+          </div>
+        </li>
+
+        <!-- opcion 6 Contacto-->
+        <li class="list_item">
+          <div class="list_button">
+            <br />
+            <!--Para poder centrar los elementos-->
+            <i class="bx bx-mail-send"></i>
+            <a href="#footer" class="nav_link nav_link--inside">Contactanos</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="titulo">
+      <h1>Automatizando a Sabios</h1>
+
+      <br />
+      <p>
+        Plataforma y aplicación digital para ayudar a adultos mayores de edad en
+        la Ciudad de México.
+      </p>
+
+      <p></p>
     </div>
+
+    <!----------------------barra de busqueda (SEARCH)----------------------------->
 
     <br />
 
@@ -180,7 +169,6 @@
         <h1>Acerca de Nosotros</h1>
         <div class="acerca-info">
           <img src="images/brain-7420599.png" alt="" id="img-About-Us" />
-
 
           <!--Quienes Somos?-->
           <p id="subtitulo-quienes-somos">
@@ -200,8 +188,6 @@
             todos, independientemente de su edad.
           </p>
         </div>
-
-
 
         <!--Mision-->
         <p id="subtitulo-mision">
@@ -265,8 +251,6 @@
               <img src="./images/undraw_coolness_re_sllrempo.svg" alt="" />
             </div>
 
-
-
             <div class="valor">
               <li>
                 <strong>Aprendizaje continuo:</strong> Fomentamos un entorno de
@@ -279,9 +263,6 @@
                 alt=""
               />
             </div>
-
-
-
 
             <div class="valor">
               <li>
@@ -330,9 +311,7 @@
               <img src="./images/undraw_mobile_Impacto positivo.svg" alt="" />
             </div>
 
-            <hr id="linea-divisora">
-
-
+            <hr id="linea-divisora" />
           </div>
         </div>
       </div>
@@ -384,15 +363,9 @@
       </section>
     </div>
 
-
-
-
     <!-- ------------------------------Ayuda------------------------------ -->
     <div class="page-container" id="help">
       <!--clase principal-->
-      <a href="#home" id="Back-Home">
-        <i class="bx bxs-home" id="id-Home_icon"></i>
-      </a>
 
       <div class="contenedor-principalAYUDA">
         <h1 id="ayudaTitulo">¿Cómo te podemos ayudar?</h1>
