@@ -34,13 +34,27 @@
     />
   </head>
 
+
+
+
+
   <body>
     <!--Barra -->
     <header id="home">
       <!----------------------BARRA DE NAVEGACION----------------------------->
-      <a href="#home" id="Back-Home">
-        <i class="bx bxs-home" id="id-Home_icon"></i>
-      </a>
+      <i class="bx bxs-home" id="id-Home_icon" onclick="goToHome()"></i>
+      <script>
+        function goToHome() {
+          // obtiene la altura de la barra de navegación
+          //(el elemento con la etiqueta header) usando la
+          //propiedad offsetHeight. La altura se almacena en la variable headerHeight.
+          const headerHeight = document.querySelector("header").offsetHeight;
+          window.scrollTo(
+            0, //realiza el desplazamiento de la página hacia el elemento con el id "home". Sin embargo, antes de hacerlo, resta la altura de la barra de navegación 
+            document.querySelector("#home").offsetTop - headerHeight //a la posición superior del elemento con id "home". Esto asegura que el desplazamiento se detenga de manera que el contenido quede visible debajo de la barra de navegación fija.
+          );
+        }
+      </script>
       <i class="bx bx-menu" id="menu-icon"></i>
       <!----------------------LOGIN & register----------------------------->
       <div class="login">

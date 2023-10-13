@@ -39,6 +39,7 @@ header {
   text-align: center;
   margin-left: 200px;
   font-size: 80px;
+  transition: opacity 1s ease-in-out;
 }
 
 .titulo p {
@@ -787,7 +788,7 @@ header {
     margin-top: 190px;
     position: absolute;
     left: -200px;
-    font-size: 52px;
+    font-size: 48px;
     align-items: center;
     font-weight: 800;
 
@@ -812,7 +813,10 @@ header {
 
   #home .search-bar {
     position: relative; /*para poder controlar las posiciones agusto*/
-    left: 120px; /*muevete a partir de la izquierd, dejando pixeles*/
+    left: 78px; /*muevete a partir de la izquierd, dejando pixeles*/
+    border: solid gray;
+    border-radius: 30px;
+    width: 28%;
   }
 
   #home .search-bar #textbox {
