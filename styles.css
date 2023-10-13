@@ -898,6 +898,10 @@ header {
   }
 
 
+
+
+
+
 /* _______________________MENU DESPLEGABLE_______________________ */
 
 
@@ -911,24 +915,20 @@ header {
 }
 
 
-#nav-menu-desplegable .list{  /* wrapper de mi menu */
-    position: fixed;
-    height: 80vh; /* Inicialmente establece la altura en 0 para ocultar el menú */
-    width: 100%;
-    background: rgb(218,255,180);
-    background: linear-gradient(47deg, rgba(218,255,180,1) 12%, rgba(116,227,210,1) 100%);
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    transition: max-height 0.3s ease; /* Agrega una transición */
-    z-index: 1;
-    transition: height 0.3s ease; /* Animación de la altura */
-    margin-top: 90px;
-  }
 
 
-#nav-menu-desplegable .list.active {
-    height: 87vh;
-  }
+#nav-menu-desplegable{
+  position: fixed;
+  height: 80vh;
+  width: 100%;
+  background: rgb(218, 255, 180);
+  background: linear-gradient(47deg, rgba(218, 255, 180, 1) 12%, rgba(116, 227, 210, 1) 100%);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: 1;
+  margin-top: 90px;
+}
+
 
 
 #nav-menu-desplegable .logo{
@@ -953,6 +953,12 @@ header {
 
   /* ______________________________________________ */
 
+
+
+
+
+
+  /* ___________________TITULO___________________________ */
   .titulo h1 {
     margin-top: 190px;
     position: absolute;

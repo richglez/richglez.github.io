@@ -17,6 +17,9 @@ function animateOnScroll() {
   });
 }
 
+
+
+
 // Agregar un event listener para el evento "scroll"
 window.addEventListener('scroll', animateOnScroll);
 window.addEventListener('load', animateOnScroll); // Animar elementos cuando se carga la página

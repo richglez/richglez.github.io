@@ -169,7 +169,7 @@
 
 
 
-    
+
     <!-- ----------------Menú para dispositivos de escritorio----------------- -->
     <nav id="nav-menu-escritorio">
       <!-- Contenido del menú de navegación para dispositivos de escritorio -->
@@ -636,6 +636,8 @@
             menuAbierto = false;
           }
 
+
+
           menuIcon.click(function () {
             if (menuAbierto) {
               cerrarMenu();
@@ -649,12 +651,16 @@
             cerrarMenu();
           });
 
+
+          //Al farle click al icono del menu:
           $(document).click(function (e) {
             if (
               menuAbierto &&
               !$(e.target).closest("#nav-menu-desplegable").length &&
               !$(e.target).is("#menu-icon")
-            ) {
+            ) 
+            
+            { //else?
               cerrarMenu();
             }
           });
