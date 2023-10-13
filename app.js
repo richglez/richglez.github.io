@@ -19,11 +19,11 @@ function animateOnScroll() {
 
 
 
-
+//------------------------------------------SSCROLL CON EL DUD0 EN MOVILES - VALORES--------------------------
 //Luego, utiliza JavaScript para detectar el evento de desplazamiento y agregar o quitar la clase .active a los elementos .valor en función del desplazamiento:
 document.addEventListener('DOMContentLoaded', function() {
     const valores = document.querySelectorAll('.acerca .valores-wrapper .valor');
-
+    
     window.addEventListener('scroll', function() {
         valores.forEach(function(valor) {
             const rect = valor.getBoundingClientRect();
@@ -34,8 +34,38 @@ document.addEventListener('DOMContentLoaded', function() {
                 valor.classList.remove('active');
             }
         });
+
+
+
+
+
     });
 });
+
+
+
+
+//------------------------------------------SSCROLL CON EL DUD0 EN MOVILES - SERVICIOS--------------------------
+document.addEventListener('DOMContentLoaded', function() {
+    const services = document.querySelectorAll('.service');
+
+    window.addEventListener('scroll', function() {
+        services.forEach(function(service) {
+            const rect = service.getBoundingClientRect();
+
+            // Comprueba si más del 50% del servicio está visible
+            if (rect.top >= 0 && rect.bottom <= window.innerHeight * 0.5) {
+                service.classList.add('active');
+            } else {
+                service.classList.remove('active');
+            }
+        });
+    });
+});
+
+
+
+
 
 
 

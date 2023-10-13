@@ -1096,6 +1096,17 @@ header {
   }
 
 
+  .service.active {
+    /* Estilos adicionales cuando se aplica la clase .active */
+    background-color: #d0faff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
 
 
 
