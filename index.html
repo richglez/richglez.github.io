@@ -51,7 +51,11 @@
           );
         }
       </script>
-      <i class="bx bx-menu" id="menu-icon"></i>
+      <a href="#nav-menu-desplegable" class="nav__target">
+        <!--Al presionar este boton te llevara al menu desplegable-->
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <!--Icono de menu para moviles-->
+      </a>
       <!----------------------LOGIN & register----------------------------->
       <div class="login">
         <!--Wrapper de login, en si el relleno del boton-->
@@ -74,18 +78,12 @@
     <!--Aqui termina la Barra -->
 
     <!-- Este es el contenedor del menú -->
-    <nav class="nav">
+    <nav class="nav" id="nav-menu-desplegable">
+      <!-- LOGO -->
+      <img src="images/logo-automatizando.png" alt="" srcset="" class="logo" />
       <ul class="list">
         <br /><br />
         <!--Salto de linea para dejar espacio con en logo-->
-
-        <!-- LOGO -->
-        <img
-          src="images/logo-automatizando.png"
-          alt=""
-          srcset=""
-          class="logo"
-        />
 
         <!-- opcion 1 Inicio-->
         <li class="list_item">
@@ -517,7 +515,64 @@
         </div>
       </section>
     </footer>
+
+
+
+
+
+    <!-- ********************************SCRIPT - MENU DESPLEGABLE********************************* -->
+    <!-- Agrega esto al final de tu página HTML antes del cierre del body -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Selecciona el icono de menú
+        var menuIcon = $("#menu-icon");
+    
+        // Selecciona el menú desplegable
+        var navMenuDesplegable = $("#nav-menu-desplegable");
+    
+        var menuAbierto = false; // Variable para rastrear el estado del menú
+    
+        // Función para abrir el menú
+        function abrirMenu() {
+          navMenuDesplegable.show();
+          menuAbierto = true;
+        }
+    
+        // Función para cerrar el menú
+        function cerrarMenu() {
+          navMenuDesplegable.hide();
+          menuAbierto = false;
+        }
+    
+        // Agrega un evento de clic al icono de menú para alternar entre abrir y cerrar
+        menuIcon.click(function () {
+          if (menuAbierto) {
+            cerrarMenu();
+          } else {
+            abrirMenu();
+          }
+          menuIcon.toggleClass("active"); // Agrega o quita la clase "active"
+        });
+    
+        // Agrega un evento de clic a los enlaces del menú para cerrar el menú
+        navMenuDesplegable.find(".nav_link").click(function () {
+          cerrarMenu();
+        });
+    
+        // Agrega un evento de clic al documento para cerrar el menú si se hace clic en cualquier parte fuera del menú desplegable
+        $(document).click(function (e) {
+          if (menuAbierto && !$(e.target).closest("#nav-menu-desplegable").length && !$(e.target).is("#menu-icon")) {
+            cerrarMenu();
+          }
+        });
+    
+        // Oculta el menú al cargar la página
+        cerrarMenu();
+      });
+    </script>
   </body>
+
   <!-- FINAL DEL BODY -->
 </html>
 <!-- FINAL DEL CODIGO -->

@@ -7,6 +7,21 @@
   scroll-behavior: smooth; /* Agregar scroll-behavior para el desplazamiento suave */
 }
 
+
+@keyframes fadeInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+
 body {
   background: rgb(117,201,188);
   background: linear-gradient(90deg, rgba(117,201,188,1) 0%, rgb(139, 238, 212) 20%, rgb(88, 215, 147) 69%);
@@ -47,12 +62,14 @@ header {
 .titulo h1 {
   font-size: 80px;
   margin: 0; /* Elimina todos los márgenes */
+  animation: fadeInFromBottom 1.5s ease forwards; /* 1s de duración con una función de temporización "ease" */
 }
 
 .titulo p {
   
   font-weight: 400;
   margin: 0; /* Elimina todos los márgenes */
+  animation: fadeInFromBottom 2.6s ease forwards; /* 1s de duración con una función de temporización "ease" */
 }
 
 /* _______________________LOGIN y REGISTER BOTON_______________________ */
@@ -248,6 +265,7 @@ header {
   padding: 10px 0;
   font-size: 28px; /* Tamaño del título */
   margin-bottom: 20px; /* Espaciado inferior */
+  animation: fadeInFromBottom 1s ease forwards; /* 1s de duración con una función de temporización "ease" */
 }
 
 .acerca-info {
@@ -259,6 +277,7 @@ header {
 
 .acerca #subtitulo-quienes-somos{
   font-size: 55px; /* Reducir el tamaño del título */
+  animation: fadeInFromBottom 1s ease forwards; /* 1s de duración con una función de temporización "ease" */
 }
 
 
@@ -774,6 +793,7 @@ header {
 
 
   header #menu-icon {
+    text-decoration: none;
     text-align: center;
     display: block; /* Mostrar el icono de menú */
     position: fixed; /* Posición fija para mantenerlo en su lugar */
@@ -786,6 +806,7 @@ header {
     background-color: hsl(169, 100%, 81%);
       /* Cambia el color de la imagen */
     border-radius: 10px;
+    color: #161616;
   }
 
 
@@ -844,18 +865,59 @@ header {
   }
 
 
+/* _______________________MENU DESPLEGABLE_______________________ */
 
 
+#menu-icon {
+  transition: transform 0.3s ease;
+}
 
-  .nav {
-    display: none;
+
+#menu-icon.active {
+  transform: rotate(180deg); /* Rota el icono cuando el menú está abierto */
+}
+
+
+  .nav .list{  /* wrapper de mi menu */
+    position: fixed;
+    height: 87vh; /* Inicialmente establece la altura en 0 para ocultar el menú */
+    background: rgb(218,255,180);
+    background: linear-gradient(47deg, rgba(218,255,180,1) 12%, rgba(116,227,210,1) 100%);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: max-height 0.3s ease; /* Agrega una transición */
+    z-index: 1;
+    transition: height 0.3s ease; /* Animación de la altura */
   }
 
-  .nav .list_item {
-    font-size: 14px;
+
+  .nav .list.active {
+    height: 87vh;
   }
 
 
+
+
+  .nav .logo{
+    position: absolute;
+    top: 610px;
+    left: 150px;
+  }
+
+  .nav .list_item {  /* mis enlaces */
+    font-size: 26px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .nav .list_item a{ /* mi enlace texto */
+    color: #333; /* Gris oscuro */
+    margin-right: 330px;
+  }
+
+
+
+  /* ______________________________________________ */
 
   .titulo h1 {
     margin-top: 190px;
@@ -875,6 +937,7 @@ header {
     font-weight: 300;
     margin-top: 350px;
     margin-left: 80px;
+
   }
 
   .logo {
@@ -919,6 +982,16 @@ header {
     margin: 10px 0; /* margen superior e inferior */
   }
 
+
+  .acerca .valores-wrapper .valor{
+    background-color: #fcfcfc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 800px;
+    flex-basis: calc(100% - 0px); /* Establece el ancho de cada valor a aproximadamente el 50% del contenedor, restando el espacio entre los valores */
+    margin-bottom: 25px; /* Espacio vertical entre los valores */
+    transition: all 0.3s; /* Agregar una transición suave para los cambios */
+  }
+
   .acerca .valores-wrapper .valor:hover {
     background-color: #beedff; /* Cambiar el color de fondo a azul claro al pasar el ratón */
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); /* Aumentar la sombra al pasar el ratón */
@@ -928,13 +1001,9 @@ header {
 
 
 
-  .acerca .valores-wrapper .valor{
-    background-color: #fcfcfc;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    width: 800px;
-    flex-basis: calc(100% - 0px); /* Establece el ancho de cada valor a aproximadamente el 50% del contenedor, restando el espacio entre los valores */
-    margin-bottom: 25px; /* Espacio vertical entre los valores */
-  }
+
+
+
 
   /*__________________________________________*/
   
