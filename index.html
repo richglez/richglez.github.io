@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./images/logo-automatizandoICO.ico" type="image/x-icon">
+    <link
+      rel="icon"
+      href="./images/logo-automatizandoICO.ico"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script src="app.js"></script>
     <script
@@ -66,11 +70,49 @@
         <!--btn-->
       </div>
 
-      <!-- Barra de búsqueda -->
+
+
+
+
+      <!-- --------------------Barra de búsqueda-------------------- -->
       <div class="search-bar" id="search-bar">
         <i class="bx bx-search" id="icono_busqueda"></i>
         <input type="text" id="textbox" placeholder="Buscar..." />
       </div>
+
+      <!-- --------------------Menú de búsqueda-------------------- -->
+      <div class="search-menu" id="search-menu">
+        <!-- Aquí puedes agregar elementos de sitios frecuentes y autocompletado -->
+        <ul>
+          <i class='bx bx-search' id="icono-search-menuBusqueda"></i>
+          <p id="btnCerrar">Cerrar</p>
+          <input type="text" placeholder="Buscar contenido...">
+          <li><a href="#" id="sitios-busqueda">Sitio 1</a></li>
+          <li><a href="#" id="sitios-busqueda">Sitio 2</a></li>
+          <li><a href="#" id="sitios-busqueda">Sitio 3</a></li>
+        </ul>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          // Cuando se hace clic en .search-bar
+          $(".search-bar").click(function () {
+            // Mostrar el menú de búsqueda
+            $("#search-menu").show();
+          });
+
+          // Cuando se hace clic fuera del menú de búsqueda, ocultarlo
+          $(document).on("click", function (e) {
+            if (
+              !$(e.target).closest(".search-bar").length &&
+              !$(e.target).closest(".search-menu").length
+            ) {
+              $("#search-menu").hide();
+            }
+          });
+        });
+      </script>
     </header>
     <!--Aqui termina la Barra -->
 
@@ -408,8 +450,8 @@
           <div class="service">
             <h3>Capacitación Tecnológica Personalizada</h3>
             <p>
-              Tutoriales interactivos y clases en línea para aprender a usar la
-              tecnología.
+              Tutoriales interactivos y clases en línea para aprender a usar
+              redes sociales desde 0.
             </p>
             <i class="fa-solid fa-person-chalkboard"></i>
           </div>

@@ -48,6 +48,12 @@ body {
 
 
 
+.search-menu{
+  display: none;
+}
+
+
+
 header {
   display: flex; /* Utiliza flexbox para alinear elementos en una fila */
   align-items: center; /* Centra verticalmente los elementos */
@@ -857,33 +863,6 @@ header {
 
 
 
-  .register #btnRegister{
-    display: none;
-  }
-
-
-  .login #btnLogin-web{
-    display: none;
-  }
-  
-  .login #btnLogin-mobile{
-    display: block;
-    position: fixed;
-    top: 25px; /* Ajusta la distancia desde la parte superior */
-    right: 20px; /* Ajusta la distancia desde la derecha */
-    display: inline-block;
-    background-color: #cc8e2b; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
-    padding: 10px 20px; /* Relleno interno del botón */
-    border-radius: 10px; /* Bordes redondeados */
-    text-align: center; /* Alineación del texto */
-    font-size: 16px; /* Tamaño de letra */
-    text-decoration: none; /* Elimina el subrayado del enlace */
-    cursor: pointer; /* Cambia el cursor al pasar el mouse sobre el botón */
-    margin-right: 65px;
-  }
-
-
 
   .titulo {
     position: static; /* Cambia a posición estática */
@@ -896,7 +875,7 @@ header {
 
 
   body .titulo h1{
-    font-size: 50px;
+    font-size: 46px;
     margin-left: 200px;
     text-align: center; /* Centra el texto horizontalmente */
   }
@@ -927,6 +906,34 @@ header {
 }
 
 
+/*------------------------------- ELEMENTOS DEL HEADER- NAV -------------------------------*/
+
+.register #btnRegister{
+  display: none;
+}
+
+
+.login #btnLogin-web{
+  display: none;
+}
+
+.login #btnLogin-mobile{
+  display: block;
+  position: fixed;
+  top: 25px; /* Ajusta la distancia desde la parte superior */
+  right: 20px; /* Ajusta la distancia desde la derecha */
+  display: inline-block;
+  background-color: #cc8e2b; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  padding: 10px 20px; /* Relleno interno del botón */
+  border-radius: 10px; /* Bordes redondeados */
+  text-align: center; /* Alineación del texto */
+  font-size: 16px; /* Tamaño de letra */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse sobre el botón */
+  margin-right: 65px;
+}
+
 
 #menu-icon {
   text-decoration: none;
@@ -954,6 +961,55 @@ header {
 #menu-icon.active {
   transform: rotate(180deg); /* Rota el icono cuando el menú está abierto */
 }
+
+
+/*------------------------------- BARRA DE BUSQUEDA -------------------------------*/
+.search-menu{  /*wrapper*/
+  z-index: 1000; /* Asegúrate de que #menu-icon tenga un z-index alto */
+  display: block;
+  position: fixed;
+  top: 0; /*ponte hasta arriba*/
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+  height: 90%;
+  width: 100%;
+  display: none;
+}
+
+.search-menu input{ /*input txt*/
+  width: 250px; /* Ancho del input según tus preferencias */
+  padding: 10px; /* Relleno interno del input */
+  font-size: 14px; /* Tamaño de fuente */
+  border: 1px solid #ccc; /* Borde con un color de fondo */
+  border-radius: 26px; /* Bordes redondeados */
+  background-color: #f8f8f8; /* Color de fondo del input */
+  color: #333; /* Color del texto dentro del input */
+  outline: none; /* Elimina el resaltado en el foco del input */
+  text-indent: 25px; /* Mueve el cursor 10px hacia la derecha */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.search-menu #icono-search-menuBusqueda{
+  position: absolute;
+  font-size: 30px;
+  top: 25px;
+  left: 5px;
+}
+
+
+
+
+
+.search-menu #btnCerrar{
+  position: absolute;
+  top: 30px;
+  right: 70px;
+  font-weight: 600;
+}
+
+/*------------------------------- -------------------------------*/
+
 
 
 
@@ -996,7 +1052,15 @@ header {
 
 
 
-  /* ______________________________________________ */
+/*------------------------------- -------------------------------*/
+
+
+
+
+
+
+
+
 
 
 

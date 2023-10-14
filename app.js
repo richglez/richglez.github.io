@@ -66,6 +66,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+// JavaScript para cerrar el menu de busquedas
+document.addEventListener('DOMContentLoaded', function () {
+  const btnCerrar = document.getElementById('btnCerrar');
+  const searchMenu = document.getElementById('search-menu');
+
+  btnCerrar.addEventListener('click', function () {
+    searchMenu.style.display = 'none'; // Oculta el menú al hacer clic en "Cerrar"
+  });
+});
+
+
+
+
 
 
 
