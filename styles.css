@@ -35,9 +35,11 @@
 
 
 
+
 body {
   background: rgb(117,201,188);
   background: linear-gradient(90deg, rgba(117,201,188,1) 0%, rgb(139, 238, 212) 20%, rgb(88, 215, 147) 69%);
+  overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
 }
 
 #menu-icon{
